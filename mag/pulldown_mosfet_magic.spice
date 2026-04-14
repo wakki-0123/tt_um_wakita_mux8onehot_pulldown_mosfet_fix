@@ -1,0 +1,31 @@
+* NGSPICE file created from pulldown_mosfet.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_HHPQSU a_25_n100# a_n33_n188# a_n185_n274# a_n83_n100#
+X0 a_25_n100# a_n33_n188# a_n83_n100# a_n185_n274# sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.25
+.ends
+
+.subckt transistor_verification BIAS VDD A1 VSS
+XXM4 VSS A1 VSS VDD sky130_fd_pr__nfet_01v8_HHPQSU
+XXM5 A1 BIAS VSS VSS sky130_fd_pr__nfet_01v8_HHPQSU
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_TGNW9T a_n73_n100# a_n33_n188# a_15_n100# a_n175_n274#
+X0 a_15_n100# a_n33_n188# a_n73_n100# a_n175_n274# sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_J8PPQP a_n73_n100# a_15_n100# w_n211_n319# a_n33_n197#
+X0 a_15_n100# a_n33_n197# a_n73_n100# w_n211_n319# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+.ends
+
+.subckt BIAS VDD1 VSS BIAS
+XXM3 VSS BIAS BIAS VSS sky130_fd_pr__nfet_01v8_TGNW9T
+XXM11 VDD1 BIAS VDD1 BIAS sky130_fd_pr__pfet_01v8_J8PPQP
+.ends
+
+.subckt pulldown_mosfet BIAS VDD A1 A2 A3 VSS VDD1
+Xx1 BIAS VDD A1 VSS transistor_verification
+Xx2 VDD1 VSS BIAS BIAS
+Xx3 BIAS VDD A3 VSS transistor_verification
+Xx4 BIAS VDD A2 VSS transistor_verification
+.ends
+

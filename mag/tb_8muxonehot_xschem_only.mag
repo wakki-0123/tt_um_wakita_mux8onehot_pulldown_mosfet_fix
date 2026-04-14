@@ -1,0 +1,24 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1770614166
+<< checkpaint >>
+rect -1260 5888 15833 9931
+rect -1260 -1260 23724 5888
+use pulldown_mosfet  x2
+timestamp 1770460059
+transform 1 0 17362 0 1 3454
+box -2386 -3454 5102 1174
+use mux8onehot  x3
+timestamp 1729136797
+transform 1 0 -4991 0 1 1147
+box 4991 -1147 19564 7524
+use pulldown_mosfet  x4
+timestamp 1770460059
+transform 1 0 9874 0 1 3454
+box -2386 -3454 5102 1174
+use pulldown_mosfet  x5
+timestamp 1770460059
+transform 1 0 2386 0 1 3454
+box -2386 -3454 5102 1174
+<< end >>

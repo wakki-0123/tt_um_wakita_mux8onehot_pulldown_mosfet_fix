@@ -1,0 +1,15 @@
+* NGSPICE file created from transistor_evaluate.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_HHPQSU a_25_n100# a_n33_n188# a_n185_n274# a_n83_n100#
+X0 a_25_n100# a_n33_n188# a_n83_n100# a_n185_n274# sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.25
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_2B38KW a_n260_n274# a_100_n100# a_n158_n100# a_n100_n188#
+X0 a_100_n100# a_n100_n188# a_n158_n100# a_n260_n274# sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=1
+.ends
+
+.subckt transistor_evaluate VSS A1 BIAS VDD
+XXM4 VSS A1 VSS VDD sky130_fd_pr__nfet_01v8_HHPQSU
+XXM5 VSS A1 VSS BIAS sky130_fd_pr__nfet_01v8_2B38KW
+.ends
+

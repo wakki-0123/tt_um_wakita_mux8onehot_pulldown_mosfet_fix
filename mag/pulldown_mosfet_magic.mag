@@ -1,0 +1,20 @@
+magic
+tech sky130A
+timestamp 1770267875
+use BIAS_magic  BIAS_magic_0
+timestamp 1770187002
+transform 1 0 -4537 0 1 2759
+box 5 -581 653 498
+use transistor_verification_magic  transistor_verification_magic_0
+timestamp 1770219672
+transform 1 0 1101 0 1 610
+box -1101 -610 908 286
+use transistor_verification_magic  transistor_verification_magic_1
+timestamp 1770219672
+transform 1 0 1412 0 1 -1120
+box -1101 -610 908 286
+use transistor_verification_magic  transistor_verification_magic_2
+timestamp 1770219672
+transform 1 0 1334 0 1 2065
+box -1101 -610 908 286
+<< end >>

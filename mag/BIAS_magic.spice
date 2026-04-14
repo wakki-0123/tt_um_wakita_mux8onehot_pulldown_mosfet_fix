@@ -1,0 +1,15 @@
+* NGSPICE file created from BIAS_magic.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_TGNW9T a_n73_n100# a_n33_n188# a_15_n100# a_n175_n274#
+X0 a_15_n100# a_n33_n188# a_n73_n100# a_n175_n274# sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_J8PPQP a_n73_n100# a_15_n100# w_n211_n319# a_n33_n197#
+X0 a_15_n100# a_n33_n197# a_n73_n100# w_n211_n319# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+.ends
+
+.subckt BIAS_magic VDD1 VSS BIAS
+XXM3 VSS BIAS BIAS VSS sky130_fd_pr__nfet_01v8_TGNW9T
+XXM11 VDD1 BIAS VDD1 BIAS sky130_fd_pr__pfet_01v8_J8PPQP
+.ends
+

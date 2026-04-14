@@ -1,0 +1,125 @@
+* NGSPICE file created from mux8onehot_xschem_only.ext - technology: sky130A
+
+.subckt sky130_fd_sc_hd__inv_2 A VGND VNB VPB VPWR Y
+X0 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.27 pd=2.54 as=0.26 ps=2.52 w=1 l=0.15
+X1 VGND A Y VNB sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.1755 ps=1.84 w=0.65 l=0.15
+X2 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0.1755 pd=1.84 as=0.169 ps=1.82 w=0.65 l=0.15
+X3 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.27 ps=2.54 w=1 l=0.15
+.ends
+
+.subckt sky130_fd_sc_hd__and2_1 A B VGND VNB VPB VPWR X
+X0 VPWR B a_59_75# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.16655 pd=1.39 as=0.0567 ps=0.69 w=0.42 l=0.15
+X1 X a_59_75# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.475 pd=2.95 as=0.16655 ps=1.39 w=1 l=0.15
+X2 VGND B a_145_75# VNB sky130_fd_pr__nfet_01v8 ad=0.1118 pd=1.04 as=0.0567 ps=0.69 w=0.42 l=0.15
+X3 a_59_75# A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.0567 pd=0.69 as=0.1176 ps=1.4 w=0.42 l=0.15
+X4 X a_59_75# VGND VNB sky130_fd_pr__nfet_01v8 ad=0.182 pd=1.86 as=0.1118 ps=1.04 w=0.65 l=0.15
+X5 a_145_75# A a_59_75# VNB sky130_fd_pr__nfet_01v8 ad=0.0567 pd=0.69 as=0.1176 ps=1.4 w=0.42 l=0.15
+.ends
+
+.subckt sky130_fd_sc_hd__and2b_1 A_N B VGND VNB VPB VPWR X
+X0 VPWR B a_207_413# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.2279 pd=1.74 as=0.0609 ps=0.71 w=0.42 l=0.15
+X1 X a_207_413# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.2279 ps=1.74 w=1 l=0.15
+X2 a_297_47# a_27_413# a_207_413# VNB sky130_fd_pr__nfet_01v8 ad=0.0504 pd=0.66 as=0.1092 ps=1.36 w=0.42 l=0.15
+X3 X a_207_413# VGND VNB sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.1013 ps=0.99 w=0.65 l=0.15
+X4 a_207_413# a_27_413# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.0609 pd=0.71 as=0.0714 ps=0.76 w=0.42 l=0.15
+X5 VPWR A_N a_27_413# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.0714 pd=0.76 as=0.1092 ps=1.36 w=0.42 l=0.15
+X6 VGND B a_297_47# VNB sky130_fd_pr__nfet_01v8 ad=0.1013 pd=0.99 as=0.0504 ps=0.66 w=0.42 l=0.15
+X7 a_27_413# A_N VGND VNB sky130_fd_pr__nfet_01v8 ad=0.1092 pd=1.36 as=0.1092 ps=1.36 w=0.42 l=0.15
+.ends
+
+.subckt sky130_fd_sc_hd__decap_4 VGND VNB VPB VPWR
+X0 VPWR VGND VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.2262 pd=2.26 as=0.4524 ps=4.52 w=0.87 l=1.05
+X1 VGND VPWR VGND VNB sky130_fd_pr__nfet_01v8 ad=0.143 pd=1.62 as=0.286 ps=3.24 w=0.55 l=1.05
+.ends
+
+.subckt passgatesCtrlManual SEL0 SEL1 SEL2 gno0 gpo0 gno1 gpo1 gno2 gpo2 gno3 gpo3
++ nSEL2 VPWR VGND
+Xx1 SEL0 VGND VGND VPWR VPWR nSEL0 sky130_fd_sc_hd__inv_2
+Xx2 SEL1 VGND VGND VPWR VPWR nSEL1 sky130_fd_sc_hd__inv_2
+Xx7 nSEL0 nSEL1 VGND VGND VPWR VPWR gno0 sky130_fd_sc_hd__and2_1
+Xx8 SEL1 SEL0 VGND VGND VPWR VPWR gno1 sky130_fd_sc_hd__and2b_1
+Xx9 SEL0 SEL1 VGND VGND VPWR VPWR gno2 sky130_fd_sc_hd__and2b_1
+Xx10 SEL1 SEL0 VGND VGND VPWR VPWR gno3 sky130_fd_sc_hd__and2_1
+Xx11 gno0 VGND VGND VPWR VPWR gpo0 sky130_fd_sc_hd__inv_2
+Xx12 gno1 VGND VGND VPWR VPWR gpo1 sky130_fd_sc_hd__inv_2
+Xx13 gno2 VGND VGND VPWR VPWR gpo2 sky130_fd_sc_hd__inv_2
+Xx15 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+Xx14 gno3 VGND VGND VPWR VPWR gpo3 sky130_fd_sc_hd__inv_2
+Xx16 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+Xx17 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+Xx18 SEL2 VGND VGND VPWR VPWR nSEL2 sky130_fd_sc_hd__inv_2
+Xx19 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_lvt_PEJ72P a_n35_21# a_35_109# a_n195_n1883# a_n35_n1797#
++ a_n93_n1709# a_n93_109# a_35_n1709#
+X0 a_35_n1709# a_n35_n1797# a_n93_n1709# a_n195_n1883# sky130_fd_pr__nfet_01v8_lvt ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=0.35
+X1 a_35_109# a_n35_21# a_n93_109# a_n195_n1883# sky130_fd_pr__nfet_01v8_lvt ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=0.35
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_lvt_4QFMR3 a_n35_21# a_n93_118# a_n35_n2215# a_n93_n2118#
++ a_35_118# a_35_n2118# w_n231_n2337#
+X0 a_35_n2118# a_n35_n2215# a_n93_n2118# w_n231_n2337# sky130_fd_pr__pfet_01v8_lvt ad=2.9 pd=20.58 as=2.9 ps=20.58 w=10 l=0.35
+X1 a_35_118# a_n35_21# a_n93_118# w_n231_n2337# sky130_fd_pr__pfet_01v8_lvt ad=2.9 pd=20.58 as=2.9 ps=20.58 w=10 l=0.35
+.ends
+
+.subckt passgate A GN GP Z VSS VDD
+XXM1 GN Z VSS GN A A Z sky130_fd_pr__nfet_01v8_lvt_PEJ72P
+XXM3 GP Z GP Z A A VDD sky130_fd_pr__pfet_01v8_lvt_4QFMR3
+.ends
+
+.subckt passgatex4 A1 GN1 GP1 Z1 A2 GN2 GP2 Z2 A3 GN3 GP3 Z3 A4 GN4 GP4 Z4 VSS VDD
+Xx1 A1 GN1 GP1 Z1 VSS VDD passgate
+Xx2 A2 GN2 GP2 Z2 VSS VDD passgate
+Xx3 A3 GN3 GP3 Z3 VSS VDD passgate
+Xx4 A4 GN4 GP4 Z4 VSS VDD passgate
+.ends
+
+.subckt mux8onehot select0 select1 select2 A1 A2 A3 A4 A5 A6 A7 A8 Z VDD VSS
+Xx1 select0 select1 select2 x3/GN1 x3/GP1 x3/GN2 x3/GP2 x3/GN3 x3/GP3 x3/GN4 x3/GP4
++ x5/GN VDD VSS passgatesCtrlManual
+Xx2 A1 x3/GN1 x3/GP1 x5/A A2 x3/GN2 x3/GP2 x5/A A3 x3/GN3 x3/GP3 x5/A A4 x3/GN4 x3/GP4
++ x5/A VSS VDD passgatex4
+Xx3 A5 x3/GN1 x3/GP1 x4/A A6 x3/GN2 x3/GP2 x4/A A7 x3/GN3 x3/GP3 x4/A A8 x3/GN4 x3/GP4
++ x4/A VSS VDD passgatex4
+Xx4 x4/A select2 x5/GN Z VSS VDD passgate
+Xx5 x5/A x5/GN select2 Z VSS VDD passgate
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_HHPQSU a_25_n100# a_n33_n188# a_n185_n274# a_n83_n100#
+X0 a_25_n100# a_n33_n188# a_n83_n100# a_n185_n274# sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.25
+.ends
+
+.subckt transistor_verification BIAS VDD A1 VSS
+XXM4 VSS A1 VSS VDD sky130_fd_pr__nfet_01v8_HHPQSU
+XXM5 A1 BIAS VSS VSS sky130_fd_pr__nfet_01v8_HHPQSU
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_V8CAV6 a_n73_n100# a_n33_n188# a_15_n100# a_n175_n274#
+X0 a_15_n100# a_n33_n188# a_n73_n100# a_n175_n274# sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_XUW9MZ a_n73_n100# a_15_n100# w_n211_n319# a_n33_n197#
+X0 a_15_n100# a_n33_n197# a_n73_n100# w_n211_n319# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+.ends
+
+.subckt BIAS VSS VDD1 BIAS
+XXM3 VSS BIAS BIAS VSS sky130_fd_pr__nfet_01v8_V8CAV6
+XXM11 VDD1 BIAS VDD1 BIAS sky130_fd_pr__pfet_01v8_XUW9MZ
+.ends
+
+.subckt pulldown_mosfet A1 A2 VDD1 A3 VDD BIAS VSS
+Xx1 BIAS VDD A1 VSS transistor_verification
+Xx2 VSS VDD1 BIAS BIAS
+Xx3 BIAS VDD A3 VSS transistor_verification
+Xx4 BIAS VDD A2 VSS transistor_verification
+.ends
+
+.subckt mux8onehot_xschem_only SEL0 SEL1 SEL2 VDD VSS IN4 IN3 IN1 IN2 IN5 IN6 IN7
++ IN8 OUT VDD1 BIAS
+Xx1 SEL0 SEL1 SEL2 IN1 IN2 IN3 IN4 IN5 IN6 IN7 IN8 OUT VDD VSS mux8onehot
+Xx2 IN4 IN5 VDD1 IN6 VDD BIAS VSS pulldown_mosfet
+Xx4 IN7 IN8 VDD1 OUT VDD BIAS VSS pulldown_mosfet
+Xx5 IN1 IN2 VDD1 IN3 VDD BIAS VSS pulldown_mosfet
+.ends
+

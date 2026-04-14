@@ -1,0 +1,7 @@
+** sch_path: /home/isshu/tt_um_wakita_mux8onehot_pulldown_mosfet_fix/sch/transistor_evaluate_cap_0323.sch
+.subckt transistor_evaluate_cap_0323 VSS A1 BIAS VDD
+*.PININFO VDD:I VSS:I BIAS:I A1:I
+XM4 VDD A1 VSS VSS sky130_fd_pr__nfet_01v8 L=0.25 W=1 nf=1 m=1
+XM5 A1 BIAS VSS VSS sky130_fd_pr__nfet_01v8 L=1 W=1 nf=1 m=1
+XC1 BIAS VSS sky130_fd_pr__cap_mim_m3_1 W=2 L=2 m=1
+.ends

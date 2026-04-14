@@ -1,0 +1,102 @@
+magic
+tech sky130A
+timestamp 1775453906
+<< metal1 >>
+rect 1004 -1324 1104 -1306
+rect 362 -1415 462 -1394
+rect 360 -1435 534 -1415
+rect 928 -1418 8072 -1324
+rect 360 -1507 385 -1435
+rect 467 -1507 534 -1435
+rect 360 -1524 534 -1507
+rect 653 -1598 753 -1498
+rect 929 -1749 991 -1418
+rect 1669 -1602 1769 -1502
+rect 1921 -1753 2004 -1418
+rect 2685 -1602 2785 -1502
+rect 2944 -1736 3027 -1418
+rect 3693 -1601 3793 -1501
+rect 3949 -1746 4032 -1418
+rect 4710 -1601 4810 -1501
+rect 4965 -1778 5048 -1418
+rect 5718 -1603 5818 -1503
+rect 5971 -1782 6054 -1418
+rect 6726 -1602 6826 -1502
+rect 6971 -1778 7054 -1418
+rect 7737 -1599 7837 -1499
+rect 7978 -1765 8061 -1418
+rect 242 -1971 342 -1968
+rect 238 -2067 8106 -1971
+rect 242 -2068 342 -2067
+<< via1 >>
+rect 385 -1507 467 -1435
+<< metal2 >>
+rect 377 -1434 471 -1419
+rect 377 -1435 8067 -1434
+rect 377 -1507 385 -1435
+rect 467 -1487 8067 -1435
+rect 467 -1507 471 -1487
+rect 377 -1583 471 -1507
+rect 1411 -1602 1506 -1487
+rect 2414 -1604 2509 -1487
+rect 3427 -1593 3522 -1487
+rect 4417 -1599 4512 -1487
+rect 5440 -1604 5535 -1487
+rect 6434 -1587 6529 -1487
+rect 7466 -1601 7561 -1487
+use transistor_evaluate_cap_0323  x1
+timestamp 1775453906
+transform 1 0 -212 0 1 -1653
+box 212 -347 1223 139
+use transistor_evaluate_cap_0323  x2
+timestamp 1775453906
+transform 1 0 799 0 1 -1653
+box 212 -347 1223 139
+use transistor_evaluate_cap_0323  x3
+timestamp 1775453906
+transform 1 0 1810 0 1 -1653
+box 212 -347 1223 139
+use transistor_evaluate_cap_0323  x4
+timestamp 1775453906
+transform 1 0 2821 0 1 -1653
+box 212 -347 1223 139
+use transistor_evaluate_cap_0323  x5
+timestamp 1775453906
+transform 1 0 3832 0 1 -1653
+box 212 -347 1223 139
+use transistor_evaluate_cap_0323  x6
+timestamp 1775453906
+transform 1 0 4843 0 1 -1653
+box 212 -347 1223 139
+use transistor_evaluate_cap_0323  x7
+timestamp 1775453906
+transform 1 0 5854 0 1 -1653
+box 212 -347 1223 139
+use transistor_evaluate_cap_0323  x8
+timestamp 1775453906
+transform 1 0 6865 0 1 -1653
+box 212 -347 1223 139
+<< labels >>
+flabel metal1 362 -1494 462 -1394 0 FreeSans 128 0 0 0 BIAS
+port 1 nsew
+flabel metal1 242 -2068 342 -1968 0 FreeSans 128 0 0 0 VSS
+port 0 nsew
+flabel metal1 1004 -1406 1104 -1306 0 FreeSans 128 0 0 0 VDD
+port 2 nsew
+flabel metal1 653 -1598 753 -1498 0 FreeSans 128 0 0 0 A1
+port 3 nsew
+flabel metal1 1669 -1602 1769 -1502 0 FreeSans 128 0 0 0 A2
+port 4 nsew
+flabel metal1 2685 -1602 2785 -1502 0 FreeSans 128 0 0 0 A3
+port 5 nsew
+flabel metal1 3693 -1601 3793 -1501 0 FreeSans 128 0 0 0 A4
+port 6 nsew
+flabel metal1 4710 -1601 4810 -1501 0 FreeSans 128 0 0 0 A5
+port 7 nsew
+flabel metal1 5718 -1603 5818 -1503 0 FreeSans 128 0 0 0 A6
+port 8 nsew
+flabel metal1 6726 -1602 6826 -1502 0 FreeSans 128 0 0 0 A7
+port 9 nsew
+flabel metal1 7737 -1599 7837 -1499 0 FreeSans 128 0 0 0 A8
+port 10 nsew
+<< end >>

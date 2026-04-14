@@ -1,0 +1,28 @@
+timestamp 1770267875
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use BIAS_magic BIAS_magic_0 1 0 -9074 0 1 5518
+use transistor_verification_magic transistor_verification_magic_1 1 0 2824 0 1 -2240
+use transistor_verification_magic transistor_verification_magic_2 1 0 2668 0 1 4130
+use transistor_verification_magic transistor_verification_magic_0 1 0 2202 0 1 1220
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "transistor_verification_magic_0/VDD" "transistor_verification_magic_2/VSS" 15.6892
+cap "transistor_verification_magic_0/VDD" "transistor_verification_magic_2/A1" 0.0870644
+cap "transistor_verification_magic_2/VSS" "transistor_verification_magic_0/BIAS" 2.3554
+cap "transistor_verification_magic_2/VSS" "transistor_verification_magic_0/VDD" 7.34506
+cap "transistor_verification_magic_2/A1" "transistor_verification_magic_0/VDD" 0.0247895
+cap "transistor_verification_magic_2/VSS" "transistor_verification_magic_0/VDD" 0.227127
+cap "transistor_verification_magic_2/VSS" "transistor_verification_magic_0/VDD" 15.7117
+cap "transistor_verification_magic_2/VSS" "transistor_verification_magic_0/BIAS" 2.33834
+cap "transistor_verification_magic_0/VDD" "transistor_verification_magic_2/VSS" 7.80997
+cap "transistor_verification_magic_2/A1" "transistor_verification_magic_0/VDD" 0.226869
+cap "transistor_verification_magic_2/VSS" "transistor_verification_magic_0/XM4/a_n185_n274#" 0.000912183
+cap "transistor_verification_magic_0/VDD" "transistor_verification_magic_2/A1" 0.0527718
+cap "transistor_verification_magic_0/VDD" "transistor_verification_magic_2/VSS" 0.54875
+merge "BIAS_magic_0/VSS" "transistor_verification_magic_2/VSS" -63.8118 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "transistor_verification_magic_2/VSS" "transistor_verification_magic_0/VSS"
+merge "transistor_verification_magic_0/VSS" "transistor_verification_magic_1/VSS"
+merge "transistor_verification_magic_1/VSS" "VSUBS"

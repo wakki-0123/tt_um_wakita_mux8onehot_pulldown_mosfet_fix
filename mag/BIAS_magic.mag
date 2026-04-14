@@ -1,0 +1,114 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1770187002
+<< nwell >>
+rect 10 530 1306 996
+<< pwell >>
+rect 376 -1162 1116 -728
+<< psubdiff >>
+rect 526 -898 776 -880
+rect 526 -976 560 -898
+rect 706 -976 776 -898
+rect 526 -1002 776 -976
+<< nsubdiff >>
+rect 570 796 792 834
+rect 570 710 630 796
+rect 766 710 792 796
+rect 570 686 792 710
+<< psubdiffcont >>
+rect 560 -976 706 -898
+<< nsubdiffcont >>
+rect 630 710 766 796
+<< locali >>
+rect 306 826 1082 914
+rect 306 698 476 826
+rect 710 796 1082 826
+rect 766 710 1082 796
+rect 710 698 1082 710
+rect 306 662 1082 698
+rect 422 -868 846 -806
+rect 422 -1016 454 -868
+rect 602 -898 846 -868
+rect 706 -976 846 -898
+rect 602 -1016 846 -976
+rect 422 -1054 846 -1016
+<< viali >>
+rect 476 796 710 826
+rect 476 710 630 796
+rect 630 710 710 796
+rect 476 698 710 710
+rect 454 -898 602 -868
+rect 454 -976 560 -898
+rect 560 -976 602 -898
+rect 454 -1016 602 -976
+<< metal1 >>
+rect 536 848 678 862
+rect 452 832 678 848
+rect 452 826 722 832
+rect 452 768 476 826
+rect 446 698 476 768
+rect 710 698 722 826
+rect 446 692 722 698
+rect 446 674 678 692
+rect 446 668 572 674
+rect 446 580 524 668
+rect 446 544 742 580
+rect 446 432 524 544
+rect 446 400 526 432
+rect 624 428 690 480
+rect 446 190 624 400
+rect 798 394 842 538
+rect 696 194 842 394
+rect 446 160 526 190
+rect 446 104 524 160
+rect 626 152 688 156
+rect 620 -20 690 152
+rect 798 10 842 194
+rect 616 -124 626 -20
+rect 684 -124 694 -20
+rect 796 -32 896 10
+rect 796 -92 810 -32
+rect 868 -92 896 -32
+rect 460 -346 512 -222
+rect 620 -244 690 -124
+rect 796 -130 896 -92
+rect 620 -308 686 -244
+rect 460 -524 616 -346
+rect 798 -364 842 -130
+rect 696 -522 842 -364
+rect 460 -668 512 -524
+rect 622 -624 684 -570
+rect 460 -712 728 -668
+rect 798 -702 842 -522
+rect 460 -862 512 -712
+rect 442 -868 614 -862
+rect 442 -1016 454 -868
+rect 602 -1016 614 -868
+rect 442 -1022 614 -1016
+<< via1 >>
+rect 626 -124 684 -20
+rect 810 -92 868 -32
+<< metal2 >>
+rect 626 -20 684 -10
+rect 684 -32 880 -22
+rect 684 -92 810 -32
+rect 868 -92 880 -32
+rect 684 -104 880 -92
+rect 626 -134 684 -124
+use sky130_fd_pr__nfet_01v8_TGNW9T  XM3
+timestamp 1770179296
+transform 1 0 653 0 1 -440
+box -211 -310 211 310
+use sky130_fd_pr__pfet_01v8_J8PPQP  XM11
+timestamp 1770179296
+transform 1 0 656 0 1 292
+box -211 -319 211 319
+<< labels >>
+flabel locali s 462 -1018 782 -868 0 FreeSans 1600 0 0 0 VSS
+port 2 nsew
+flabel metal1 812 -110 882 -12 0 FreeSans 1600 0 0 0 BIAS
+port 3 nsew
+flabel nwell 428 684 988 862 0 FreeSans 1600 0 0 0 VDD1
+port 1 nsew
+<< end >>

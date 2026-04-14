@@ -1,0 +1,1 @@
+lvs "transistor_evaluate_cap_0410_mag.spice  transistor_evaluate_cap_0410" "transistor_evaluate_cap_0410_sch.spice  transistor_evaluate_cap_0410" ~/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl transistor_evaluate_cap_0410_comp.out

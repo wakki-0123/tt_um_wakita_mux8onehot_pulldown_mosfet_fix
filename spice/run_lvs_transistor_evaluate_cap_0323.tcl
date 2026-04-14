@@ -1,0 +1,1 @@
+lvs "transistor_evaluate_cap_0323_mag.spice  transistor_evaluate_cap_0323" "transistor_evaluate_cap_0323.spice  transistor_evaluate_cap_0323" ~/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl transistor_evaluate_cap_0323_comp.out

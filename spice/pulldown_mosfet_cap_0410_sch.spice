@@ -1,0 +1,24 @@
+** sch_path: /home/isshu/tt_um_wakita_mux8onehot_pulldown_mosfet_fix/sch/pulldown_mosfet_cap_0410.sch
+.subckt pulldown_mosfet_cap_0410 A2 A3 VDD A1 VSS BIAS A4 A5 A6 A7 A8
+*.PININFO A2:I A3:I VDD:I A1:I VSS:I BIAS:I A4:I A5:I A6:I A7:I A8:I
+x1 VSS A1 BIAS VDD transistor_evaluate_cap_0410
+x2 VSS A2 BIAS VDD transistor_evaluate_cap_0410
+x3 VSS A3 BIAS VDD transistor_evaluate_cap_0410
+x4 VSS A4 BIAS VDD transistor_evaluate_cap_0410
+x5 VSS A5 BIAS VDD transistor_evaluate_cap_0410
+x6 VSS A6 BIAS VDD transistor_evaluate_cap_0410
+x7 VSS A7 BIAS VDD transistor_evaluate_cap_0410
+x8 VSS A8 BIAS VDD transistor_evaluate_cap_0410
+.ends
+
+* expanding   symbol:  transistor_evaluate_cap_0410.sym # of pins=4
+** sym_path: /home/isshu/tt_um_wakita_mux8onehot_pulldown_mosfet_fix/sch/transistor_evaluate_cap_0410.sym
+** sch_path: /home/isshu/tt_um_wakita_mux8onehot_pulldown_mosfet_fix/sch/transistor_evaluate_cap_0410.sch
+.subckt transistor_evaluate_cap_0410 VSS A1 BIAS VDD
+*.PININFO VDD:I VSS:I BIAS:I A1:I
+XM4 VDD A1 VSS VSS sky130_fd_pr__nfet_01v8 L=0.25 W=1 nf=1 m=1
+XM5 A1 BIAS VSS VSS sky130_fd_pr__nfet_01v8 L=1 W=1 nf=1 m=1
+XC1 BIAS VSS sky130_fd_pr__cap_mim_m3_1 W=2 L=2 m=1
+XC2 A1 VSS sky130_fd_pr__cap_mim_m3_1 W=2 L=2 m=1
+.ends
+

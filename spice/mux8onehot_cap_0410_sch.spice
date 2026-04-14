@@ -1,0 +1,92 @@
+** sch_path: /home/isshu/tt_um_wakita_mux8onehot_pulldown_mosfet_fix/sch/mux8onehot_cap_0410.sch
+.subckt mux8onehot_cap_0410 SEL0 SEL1 SEL2 VDD VSS V_gate BIAS V_drain
+*.PININFO SEL0:I SEL1:I SEL2:I VDD:I VSS:I V_gate:B BIAS:I V_drain:B
+x1 VDD VSS SEL0 SEL1 IN5 SEL2 IN1 IN6 IN2 IN7 IN3 IN8 IN4 V_gate mux8onehot
+x2 VSS BIAS V_drain IN1 IN2 IN3 IN4 IN5 IN6 IN7 IN8 pulldown_mosfet_cap_0410
+.ends
+
+* expanding   symbol:  mux8onehot.sym # of pins=14
+** sym_path: /home/isshu/tt_um_wakita_mux8onehot_pulldown_mosfet_fix/sch/mux8onehot.sym
+** sch_path: /home/isshu/tt_um_wakita_mux8onehot_pulldown_mosfet_fix/sch/mux8onehot.sch
+.subckt mux8onehot VDD VSS select0 select1 A5 select2 A1 A6 A2 A7 A3 A8 A4 Z
+*.PININFO select0:I select1:I select2:I VDD:I VSS:I Z:B A1:B A2:B A3:B A4:B A5:B A6:B A7:B A8:B
+x4 OUT_HIGH select2 nSEL2 Z VDD VSS passgate
+x5 OUT_LOW nSEL2 select2 Z VDD VSS passgate
+x2 A1 gno0 gpo0 OUT_LOW A2 gno1 gpo1 OUT_LOW A3 gno2 gpo2 OUT_LOW A4 gno3 gpo3 OUT_LOW VDD VSS passgatex4
+x1 select0 select1 select2 gno0 gpo0 gno1 gpo1 gno2 gpo2 gno3 gpo3 nSEL2 VDD VSS passgatesCtrlManual
+x3 A5 gno0 gpo0 OUT_HIGH A6 gno1 gpo1 OUT_HIGH A7 gno2 gpo2 OUT_HIGH A8 gno3 gpo3 OUT_HIGH VDD VSS passgatex4
+.ends
+
+
+* expanding   symbol:  pulldown_mosfet_cap_0410.sym # of pins=11
+** sym_path: /home/isshu/tt_um_wakita_mux8onehot_pulldown_mosfet_fix/sch/pulldown_mosfet_cap_0410.sym
+** sch_path: /home/isshu/tt_um_wakita_mux8onehot_pulldown_mosfet_fix/sch/pulldown_mosfet_cap_0410.sch
+.subckt pulldown_mosfet_cap_0410 VSS BIAS VDD A1 A2 A3 A4 A5 A6 A7 A8
+*.PININFO A2:I A3:I VDD:I A1:I VSS:I BIAS:I A4:I A5:I A6:I A7:I A8:I
+x1 VSS A1 BIAS VDD transistor_evaluate_cap_0410
+x2 VSS A2 BIAS VDD transistor_evaluate_cap_0410
+x3 VSS A3 BIAS VDD transistor_evaluate_cap_0410
+x4 VSS A4 BIAS VDD transistor_evaluate_cap_0410
+x5 VSS A5 BIAS VDD transistor_evaluate_cap_0410
+x6 VSS A6 BIAS VDD transistor_evaluate_cap_0410
+x7 VSS A7 BIAS VDD transistor_evaluate_cap_0410
+x8 VSS A8 BIAS VDD transistor_evaluate_cap_0410
+.ends
+
+
+* expanding   symbol:  passgate.sym # of pins=6
+** sym_path: /home/isshu/tt_um_wakita_mux8onehot_pulldown_mosfet_fix/sch/passgate.sym
+** sch_path: /home/isshu/tt_um_wakita_mux8onehot_pulldown_mosfet_fix/sch/passgate.sch
+.subckt passgate A GN GP Z VDD VSS
+*.PININFO GN:I VDD:I VSS:I GP:I A:B Z:B
+XM1 Z GN A VSS sky130_fd_pr__nfet_01v8_lvt L=0.35 W=8 nf=1 m=2
+XM3 Z GP A VDD sky130_fd_pr__pfet_01v8_lvt L=0.35 W=10 nf=1 m=2
+.ends
+
+
+* expanding   symbol:  passgatex4.sym # of pins=18
+** sym_path: /home/isshu/tt_um_wakita_mux8onehot_pulldown_mosfet_fix/sch/passgatex4.sym
+** sch_path: /home/isshu/tt_um_wakita_mux8onehot_pulldown_mosfet_fix/sch/passgatex4.sch
+.subckt passgatex4 A1 GN1 GP1 Z1 A2 GN2 GP2 Z2 A3 GN3 GP3 Z3 A4 GN4 GP4 Z4 VDD VSS
+*.PININFO VDD:I VSS:I GP1:I GN1:I A1:B Z1:B GP2:I GN2:I A2:B Z2:B GP3:I GN3:I A3:B Z3:B GP4:I GN4:I A4:B Z4:B
+x1 A1 GN1 GP1 Z1 VDD VSS passgate
+x2 A2 GN2 GP2 Z2 VDD VSS passgate
+x3 A3 GN3 GP3 Z3 VDD VSS passgate
+x4 A4 GN4 GP4 Z4 VDD VSS passgate
+.ends
+
+
+* expanding   symbol:  passgatesCtrlManual.sym # of pins=14
+** sym_path: /home/isshu/tt_um_wakita_mux8onehot_pulldown_mosfet_fix/sch/passgatesCtrlManual.sym
+** sch_path: /home/isshu/tt_um_wakita_mux8onehot_pulldown_mosfet_fix/sch/passgatesCtrlManual.sch
+.subckt passgatesCtrlManual SEL0 SEL1 SEL2 gno0 gpo0 gno1 gpo1 gno2 gpo2 gno3 gpo3 nSEL2 VPWR VGND
+*.PININFO SEL0:I SEL1:I SEL2:I gno0:O gpo0:O gno1:O gpo1:O gno2:O gpo2:O gno3:O gpo3:O nSEL2:O VPWR:I VGND:I
+x1 SEL0 VGND VGND VPWR VPWR nSEL0 sky130_fd_sc_hd__inv_2
+x2 SEL1 VGND VGND VPWR VPWR nSEL1 sky130_fd_sc_hd__inv_2
+x7 nSEL0 nSEL1 VGND VGND VPWR VPWR gno0 sky130_fd_sc_hd__and2_1
+x10 SEL1 SEL0 VGND VGND VPWR VPWR gno3 sky130_fd_sc_hd__and2_1
+x11 gno0 VGND VGND VPWR VPWR gpo0 sky130_fd_sc_hd__inv_2
+x12 gno1 VGND VGND VPWR VPWR gpo1 sky130_fd_sc_hd__inv_2
+x13 gno2 VGND VGND VPWR VPWR gpo2 sky130_fd_sc_hd__inv_2
+x14 gno3 VGND VGND VPWR VPWR gpo3 sky130_fd_sc_hd__inv_2
+x15 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+x16 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+x17 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+x8 SEL1 SEL0 VGND VGND VPWR VPWR gno1 sky130_fd_sc_hd__and2b_1
+x9 SEL0 SEL1 VGND VGND VPWR VPWR gno2 sky130_fd_sc_hd__and2b_1
+x18 SEL2 VGND VGND VPWR VPWR nSEL2 sky130_fd_sc_hd__inv_2
+x19 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+.ends
+
+
+* expanding   symbol:  transistor_evaluate_cap_0410.sym # of pins=4
+** sym_path: /home/isshu/tt_um_wakita_mux8onehot_pulldown_mosfet_fix/sch/transistor_evaluate_cap_0410.sym
+** sch_path: /home/isshu/tt_um_wakita_mux8onehot_pulldown_mosfet_fix/sch/transistor_evaluate_cap_0410.sch
+.subckt transistor_evaluate_cap_0410 VSS A1 BIAS VDD
+*.PININFO VDD:I VSS:I BIAS:I A1:I
+XM4 VDD A1 VSS VSS sky130_fd_pr__nfet_01v8 L=0.25 W=1 nf=1 m=1
+XM5 A1 BIAS VSS VSS sky130_fd_pr__nfet_01v8 L=1 W=1 nf=1 m=1
+XC1 BIAS VSS sky130_fd_pr__cap_mim_m3_1 W=2 L=2 m=1
+XC2 A1 VSS sky130_fd_pr__cap_mim_m3_1 W=2 L=2 m=1
+.ends
+

@@ -1,0 +1,299 @@
+timestamp 1775832470
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use transistor_evaluate_cap_0410 x8 1 0 17962 0 1 -3060
+use transistor_evaluate_cap_0410 x7 1 0 15344 0 1 -3060
+use transistor_evaluate_cap_0410 x6 1 0 12596 0 1 -3052
+use transistor_evaluate_cap_0410 x5 1 0 10016 0 1 -3042
+use transistor_evaluate_cap_0410 x4 1 0 7392 0 1 -3032
+use transistor_evaluate_cap_0410 x3 1 0 4822 0 1 -3018
+use transistor_evaluate_cap_0410 x2 1 0 2220 0 1 -3032
+use transistor_evaluate_cap_0410 x1 1 0 -350 0 1 -3036
+port "VSS" 4 994 -4140 1194 -3940 m1
+port "A8" 10 19560 -2924 19760 -2724 m1
+port "A7" 9 16942 -2940 17142 -2740 m1
+port "A6" 8 14196 -2948 14396 -2748 m1
+port "A5" 7 11668 -2928 11868 -2728 m1
+port "A4" 6 9002 -2890 9202 -2690 m1
+port "A3" 1 6426 -2878 6626 -2678 m1
+port "A2" 0 3824 -2900 4024 -2700 m1
+port "A1" 3 1242 -2880 1442 -2680 m1
+port "VDD" 2 1776 -2632 1976 -2432 m1
+port "BIAS" 5 726 -2568 926 -2368 m1
+node "VSS" 26 10467.4 994 -4140 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2432276 44972 0 0 0 0 0 0 0 0 0 0
+node "A8" 0 151.572 19560 -2924 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40000 800 0 0 0 0 0 0 0 0 0 0
+node "A7" 0 150.006 16942 -2940 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40000 800 0 0 0 0 0 0 0 0 0 0
+node "A6" 0 152.553 14196 -2948 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40000 800 0 0 0 0 0 0 0 0 0 0
+node "A5" 0 149.055 11668 -2928 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40000 800 0 0 0 0 0 0 0 0 0 0
+node "A4" 0 146.158 9002 -2890 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40000 800 0 0 0 0 0 0 0 0 0 0
+node "A3" 0 141.837 6426 -2878 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40000 800 0 0 0 0 0 0 0 0 0 0
+node "A2" 0 145.702 3824 -2900 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40000 800 0 0 0 0 0 0 0 0 0 0
+node "A1" 0 169.495 1242 -2880 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40000 800 0 0 0 0 0 0 0 0 0 0
+node "VDD" 41 8850.84 1776 -2632 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1363720 42568 0 0 0 0 0 0 0 0 0 0
+node "BIAS" 43 9135.05 726 -2568 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 197048 5332 1526772 43508 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "BIAS" "A5" 2.63634
+cap "VDD" "BIAS" 3474.19
+cap "VDD" "A2" 37.2717
+cap "VDD" "A6" 28.628
+cap "BIAS" "A4" 3.12799
+cap "A3" "VSS" 7.02875
+cap "BIAS" "A8" 2.68006
+cap "VDD" "A5" 33.3178
+cap "A7" "VSS" 7.34558
+cap "BIAS" "A1" 4.01783
+cap "VDD" "A4" 37.7892
+cap "BIAS" "VSS" 49.5337
+cap "A2" "VSS" 7.15447
+cap "A6" "VSS" 7.42449
+cap "VDD" "A8" 30.6835
+cap "A3" "BIAS" 3.30261
+cap "A5" "VSS" 7.32113
+cap "VDD" "A1" 10.487
+cap "VDD" "VSS" 82.5127
+cap "VSS" "A4" 7.09677
+cap "BIAS" "A7" 2.5316
+cap "VSS" "A8" 7.24876
+cap "A3" "VDD" 42.6767
+cap "BIAS" "A2" 2.91599
+cap "A6" "BIAS" 2.45226
+cap "A1" "VSS" 7.32577
+cap "VDD" "A7" 31.671
+cap "x1/A1" "x1/VSS" -0.918991
+cap "x1/A1" "x1/BIAS" 15.6388
+cap "x2/XC1/m3_n386_n240#" "x1/BIAS" 0.452129
+cap "x1/VDD" "x1/BIAS" -1.88128
+cap "x1/VSS" "x1/BIAS" 11.5036
+cap "x2/BIAS" "x1/A1" 66.2295
+cap "x2/BIAS" "x2/VDD" 3.771
+cap "x2/VSS" "x1/A1" 104.886
+cap "x2/VSS" "x2/VDD" 8.04088
+cap "x1/A1" "x2/VDD" 17.1772
+cap "x1/A1" "x2/A1" 0.0417372
+cap "x2/BIAS" "x2/VSS" 8.25706
+cap "x2/A1" "x2/BIAS" 13.7757
+cap "x2/A1" "x2/VSS" -1.39703
+cap "x2/A1" "x2/VDD" 19.6087
+cap "x1/XC2/m3_n386_n240#" "x2/VSS" 8.74373
+cap "x2/BIAS" "x3/XC1/m3_n386_n240#" 0.399781
+cap "x2/BIAS" "x2/VSS" 19.785
+cap "x2/VDD" "x2/BIAS" -0.061035
+cap "x2/BIAS" "x1/A1" 4.5848
+cap "x2/VDD" "x2/VSS" 2.49664
+cap "x1/A1" "x2/VSS" 20.1904
+cap "x2/A1" "x3/BIAS" 61.4634
+cap "x2/A1" "x3/VSS" 100.504
+cap "x3/A1" "x3/BIAS" 0.357212
+cap "x3/VSS" "x3/VDD" 7.32117
+cap "x3/BIAS" "x3/VDD" 3.3103
+cap "x2/A1" "x3/A1" 0.0215054
+cap "x2/A1" "x3/VDD" 14.6764
+cap "x3/BIAS" "x3/VSS" 9.89975
+cap "x3/VDD" "x3/VSS" 1.88285
+cap "x2/XC2/m3_n386_n240#" "x3/VSS" 8.16688
+cap "x3/VDD" "x3/A1" 23.7585
+cap "x2/A1" "x3/VSS" 19.7735
+cap "x3/VDD" "x4/BIAS" -1.27997
+cap "x3/A1" "x3/VSS" 12.0389
+cap "x4/BIAS" "x2/A1" 4.31979
+cap "x4/BIAS" "x3/VSS" 16.4956
+cap "x3/A1" "x4/XC1/m3_n386_n240#" 1.24767
+cap "x3/A1" "x4/BIAS" 10.4109
+cap "x4/XC1/m3_n386_n240#" "x4/BIAS" 0.452129
+cap "x4/BIAS" "x4/VSS" 11.8681
+cap "x4/A1" "x4/BIAS" 0.35424
+cap "x3/A1" "x4/BIAS" 68.5516
+cap "x3/A1" "x4/VSS" 90.6631
+cap "x4/A1" "x3/A1" 0.0286753
+cap "x4/VDD" "x4/BIAS" 5.13951
+cap "x4/VDD" "x4/VSS" 8.48035
+cap "x4/VDD" "x3/A1" 9.2506
+cap "x5/BIAS" "x3/XM4/a_n33_n188#" 4.87652
+cap "x4/VSS" "x4/A1" 30.7271
+cap "x5/BIAS" "x4/VDD" -0.0893444
+cap "x4/VSS" "x3/XM4/a_n33_n188#" 19.9702
+cap "x4/VSS" "x4/VDD" 2.55701
+cap "x4/A1" "x4/VDD" 29.1149
+cap "x3/XC2/m3_n386_n240#" "x4/VSS" 8.87859
+cap "x5/BIAS" "x4/A1" 13.4446
+cap "x4/VSS" "x5/BIAS" 16.6879
+cap "x4/A1" "x5/VSS" 84.3301
+cap "x5/VSS" "x5/VDD" 8.66836
+cap "x4/A1" "x5/A1" 0.020326
+cap "x4/A1" "x5/VDD" 6.56263
+cap "x5/VSS" "x5/BIAS" 15.102
+cap "x5/BIAS" "x5/A1" 0.334291
+cap "x4/A1" "x5/BIAS" 62.7194
+cap "x5/BIAS" "x5/VDD" 3.59208
+cap "x6/BIAS" "x4/m1_1992_n368#" 4.62596
+cap "x6/VSS" "x4/m1_1992_n368#" 2.10008
+cap "x5/VDD" "x5/A1" 37.0626
+cap "x6/BIAS" "x5/A1" 49.6621
+cap "x6/VSS" "x4/XC2/m3_n386_n240#" 6.10925
+cap "x6/VSS" "x5/A1" 77.2205
+cap "x5/VDD" "x6/BIAS" -0.860758
+cap "x6/XM5/a_n158_n100#" "x5/A1" 0.0271728
+cap "x6/VSS" "x5/VDD" 0.4126
+cap "x6/VSS" "x6/BIAS" 12.3152
+cap "x6/BIAS" "x6/VDD" 2.5768
+cap "x6/VDD" "x6/A1" 1.65345
+cap "x6/VDD" "x5/A1" 0.0971578
+cap "x6/VSS" "x6/BIAS" 22.4538
+cap "x6/BIAS" "x6/A1" 11.5354
+cap "x6/VSS" "x5/A1" 46.0939
+cap "x6/BIAS" "x5/A1" 35.3779
+cap "x6/VSS" "x6/VDD" 7.82209
+cap "x6/VDD" "x6/A1" 35.1133
+cap "x6/VDD" "x7/BIAS" -0.0597779
+cap "x6/A1" "x7/BIAS" 33.8027
+cap "x7/VSS" "x6/VDD" 0.843676
+cap "x7/VSS" "x6/A1" 74.0591
+cap "x7/VSS" "x7/BIAS" 5.20483
+cap "x7/XM5/a_n158_n100#" "x6/A1" 0.00312801
+cap "x6/A1" "x7/BIAS" 24.3729
+cap "x7/VDD" "x7/BIAS" 1.20515
+cap "x7/BIAS" "x7/VSS" 20.8371
+cap "x7/A1" "x7/BIAS" 12.8283
+cap "x6/A1" "x7/VSS" 26.1197
+cap "x7/VDD" "x7/VSS" 6.59233
+cap "x7/VDD" "x7/A1" 3.35614
+cap "x7/A1" "x7/VDD" 32.7521
+cap "x8/VSS" "x8/BIAS" 4.25367
+cap "x7/VDD" "x8/BIAS" 0.794785
+cap "x7/A1" "x8/BIAS" 41.369
+cap "x7/A1" "x8/A1" 0.0209636
+cap "x8/VSS" "x7/VDD" 2.03787
+cap "x7/A1" "x8/VSS" 84.6572
+cap "x8/VDD" "x8/A1" 7.74085
+cap "x8/BIAS" "x8/VSS" 24.7935
+cap "x7/A1" "x8/VSS" 33.0827
+cap "x8/A1" "x8/VSS" -1.45725
+cap "x8/BIAS" "x7/A1" 32.7072
+cap "x8/VDD" "x8/VSS" 6.92475
+cap "x8/BIAS" "x8/A1" 20.2947
+cap "x8/BIAS" "x8/VDD" 2.82532
+cap "x8/BIAS" "x8/VSS" 0.69309
+cap "x8/VDD" "x8/A1" 22.1891
+cap "x8/VSS" "x8/A1" 11.6674
+cap "x8/VDD" "x8/VSS" 3.84181
+cap "x8/BIAS" "x8/A1" 0.0998779
+cap "x8/VDD" "x8/BIAS" -2.50081
+cap "x1/A1" "x1/BIAS" 21.3925
+cap "x1/VSS" "x1/BIAS" 9.41828
+cap "x1/VDD" "x1/BIAS" -1.78169
+cap "x1/A1" "x2/BIAS" 6.61831
+cap "x2/VDD" "x2/VSS" 2.1254
+cap "x1/A1" "x2/VDD" 7.78568
+cap "x2/BIAS" "x2/VSS" 7.60234
+cap "x2/VDD" "x2/BIAS" 7.05456
+cap "x2/VSS" "x2/BIAS" 13.3466
+cap "x2/VDD" "x2/A1" 16.3772
+cap "x2/BIAS" "x2/A1" 19.6424
+cap "x2/VDD" "x2/VSS" 6.51023
+cap "x2/VDD" "x2/BIAS" 17.9865
+cap "x3/BIAS" "x3/VDD" 13.239
+cap "x3/VSS" "x3/VDD" 9.61858
+cap "x3/VSS" "x3/BIAS" 7.69573
+cap "x2/A1" "x3/BIAS" 5.5716
+cap "x2/A1" "x3/VDD" 9.54938
+cap "x3/A1" "x3/VDD" 19.4943
+cap "x3/VSS" "x4/BIAS" 14.0866
+cap "x3/VDD" "x4/BIAS" 14.3467
+cap "x3/A1" "x4/BIAS" 25.0221
+cap "x3/VSS" "x3/VDD" 3.51439
+cap "x3/A1" "x4/VDD" 7.3428
+cap "x4/BIAS" "x4/VDD" 16.3129
+cap "x4/VSS" "x4/BIAS" 8.71098
+cap "x4/BIAS" "x3/A1" 4.62191
+cap "x4/VSS" "x4/VDD" 13.5199
+cap "x4/VDD" "x5/BIAS" 19.0105
+cap "x4/VDD" "x4/A1" 23.452
+cap "x4/VSS" "x4/VDD" -3.44252
+cap "x5/BIAS" "x4/A1" 22.1172
+cap "x4/VSS" "x5/BIAS" 11.7336
+cap "x5/BIAS" "x4/A1" 4.00806
+cap "x5/VSS" "x5/BIAS" 9.10726
+cap "x4/A1" "x5/VDD" 4.69585
+cap "x5/VSS" "x5/VDD" 14.2311
+cap "x5/BIAS" "x5/VDD" 13.7651
+cap "x5/VDD" "x6/BIAS" 14.9912
+cap "x5/VDD" "x5/A1" 25.244
+cap "x6/VSS" "x5/VDD" -2.09566
+cap "x5/A1" "x6/BIAS" 17.4119
+cap "x6/VSS" "x6/BIAS" 9.93451
+cap "x5/A1" "x6/BIAS" 0.362918
+cap "x6/VDD" "x6/VSS" 12.8558
+cap "x6/BIAS" "x6/VDD" 20.5202
+cap "x6/VDD" "x6/A1" 1.65345
+cap "x6/BIAS" "x6/VSS" 8.79079
+cap "x6/BIAS" "x6/A1" 4.69701
+cap "x7/BIAS" "x7/VSS" 9.5887
+cap "x7/BIAS" "x6/VDD" 6.03843
+cap "x6/A1" "x7/BIAS" 9.55778
+cap "x7/VSS" "x6/VDD" -0.412785
+cap "x6/A1" "x6/VDD" 23.1431
+cap "x7/A1" "x7/VDD" 3.35614
+cap "x7/VSS" "x7/VDD" 11.2787
+cap "x7/BIAS" "x6/A1" 0.115413
+cap "x7/BIAS" "x7/A1" 6.08321
+cap "x7/BIAS" "x7/VDD" 20.6268
+cap "x7/BIAS" "x7/VSS" 9.5792
+cap "x7/VDD" "x8/VSS" 0.243402
+cap "x8/BIAS" "x7/VDD" 6.05419
+cap "x8/BIAS" "x8/VSS" 8.27664
+cap "x7/A1" "x7/VDD" 21.2897
+cap "x8/BIAS" "x7/A1" 10.0215
+cap "x8/A1" "x8/BIAS" 12.2275
+cap "x8/VDD" "x8/BIAS" 22.4513
+cap "x8/VDD" "x8/A1" 7.74085
+cap "x8/VSS" "x8/BIAS" 12.3616
+cap "x8/VSS" "x8/VDD" 10.1203
+cap "x7/A1" "x8/BIAS" 0.269337
+cap "x8/VDD" "x8/BIAS" -0.45523
+cap "x8/VDD" "x8/VSS" 0.468992
+cap "x8/VSS" "x8/BIAS" 1.93502
+cap "x8/VDD" "x8/A1" 13.755
+cap "x8/A1" "x8/BIAS" 1.53144
+merge "x8/VSUBS" "x7/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x7/VSUBS" "x6/VSUBS"
+merge "x6/VSUBS" "x5/VSUBS"
+merge "x5/VSUBS" "x4/VSUBS"
+merge "x4/VSUBS" "x3/VSUBS"
+merge "x3/VSUBS" "x1/VSUBS"
+merge "x1/VSUBS" "x2/VSUBS"
+merge "x2/VSUBS" "VSUBS"
+merge "x8/BIAS" "x7/BIAS" -2617.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -67924 -3876 0 0 0 0 0 0 0 0 0 0
+merge "x7/BIAS" "x6/BIAS"
+merge "x6/BIAS" "x5/BIAS"
+merge "x5/BIAS" "x4/BIAS"
+merge "x4/BIAS" "x3/BIAS"
+merge "x3/BIAS" "x2/BIAS"
+merge "x2/BIAS" "x1/BIAS"
+merge "x1/BIAS" "BIAS"
+merge "x8/VDD" "x7/VDD" -1474.09 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -105788 -3672 0 0 0 0 0 0 0 0 0 0
+merge "x7/VDD" "x6/VDD"
+merge "x6/VDD" "x5/VDD"
+merge "x5/VDD" "x4/VDD"
+merge "x4/VDD" "x3/VDD"
+merge "x3/VDD" "x2/VDD"
+merge "x2/VDD" "x1/VDD"
+merge "x1/VDD" "VDD"
+merge "x8/VSS" "x7/VSS" -3706.22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -185396 -5312 0 0 0 0 0 0 0 0 0 0
+merge "x7/VSS" "x6/VSS"
+merge "x6/VSS" "x5/VSS"
+merge "x5/VSS" "x4/VSS"
+merge "x4/VSS" "x3/VSS"
+merge "x3/VSS" "x2/VSS"
+merge "x2/VSS" "x1/VSS"
+merge "x1/VSS" "VSS"
+merge "x2/A1" "A2" -358.417 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10800 -508 0 0 0 0 0 0 0 0 0 0
+merge "x8/A1" "A8" -185.22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10000 -500 0 0 0 0 0 0 0 0 0 0
+merge "x5/A1" "A5" -371.698 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14400 -544 0 0 0 0 0 0 0 0 0 0
+merge "x6/A1" "A6" -353.334 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16400 -564 0 0 0 0 0 0 0 0 0 0
+merge "x3/A1" "A3" -360.535 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9200 -492 0 0 0 0 0 0 0 0 0 0
+merge "x1/A1" "A1" -315.353 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6000 -460 0 0 0 0 0 0 0 0 0 0
+merge "x4/A1" "A4" -359.053 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8800 -488 0 0 0 0 0 0 0 0 0 0
+merge "x7/A1" "A7" -365.596 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -13200 -532 0 0 0 0 0 0 0 0 0 0

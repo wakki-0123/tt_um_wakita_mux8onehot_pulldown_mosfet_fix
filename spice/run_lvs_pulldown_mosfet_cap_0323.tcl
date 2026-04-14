@@ -1,0 +1,1 @@
+lvs "pulldown_mosfet_cap_0323_mag.spice  pulldown_mosfet_cap_0323" "pulldown_mosfet_cap_0323.spice  pulldown_mosfet_cap_0323" ~/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl pulldown_mosfet_cap_0323_comp.out
