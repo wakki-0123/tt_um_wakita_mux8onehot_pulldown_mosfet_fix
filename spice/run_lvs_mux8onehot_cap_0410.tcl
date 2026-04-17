@@ -1,5 +1,5 @@
 # 1. レイアウト側(Magic)の読み込み
-set layout [readnet spice mux8onehot_cap_0410_mag3.spice]
+set layout [readnet spice mux8onehot_cap_0410_mag.spice]
 
 # 2. 回路図側(Xschem)の作成（空のネットリストを用意）
 set source [readnet spice /dev/null]
