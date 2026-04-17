@@ -6,15 +6,15 @@ S {}
 F {}
 E {}
 B 2 2155 -305 3665 445 {flags=graph
-y1=-1.4e-10
-y2=5.3e-06
+y1=1.8e-12
+y2=2.5e-09
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-1.5695477e-09
-x2=3.0430453e-08
+x1=-5e-09
+x2=4.5e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -25,76 +25,14 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color="21 4"
-node="i(v.x2.x8.vmeas)
-i(vmeas_1)"}
+color="4 6 18 15"
+node="i(vmeas_2)
+i(v.x2.x1.vmeas)
+i(v.x2.x7.vmeas)
+i(v.x2.x8.vmeas)"}
 T {One hot 8:1} 870 160 0 0 1 1 {}
 N 1180 420 1250 420 {
 lab=V_gate}
-N -150 -555 -150 -545 {
-lab=VSS}
-N -150 -620 -100 -620 {
-lab=#net1}
-N -150 -620 -150 -615 {
-lab=#net1}
-N -150 -215 -150 -205 {
-lab=VSS}
-N -150 -280 -90 -280 {
-lab=#net2}
-N -150 -280 -150 -275 {
-lab=#net2}
-N -150 -435 -150 -425 {
-lab=VSS}
-N -150 -500 -95 -500 {
-lab=#net3}
-N -150 -500 -150 -495 {
-lab=#net3}
-N -160 -325 -160 -315 {
-lab=VSS}
-N -160 -390 -100 -390 {
-lab=#net4}
-N -160 -390 -160 -385 {
-lab=#net4}
-N -30 -280 -5 -280 {
-lab=IN4}
-N -40 -390 -5 -390 {
-lab=IN3}
-N -35 -500 -5 -500 {
-lab=IN2}
-N -40 -620 -5 -620 {
-lab=IN1}
-N -560 -585 -560 -575 {
-lab=VSS}
-N -560 -650 -510 -650 {
-lab=#net5}
-N -560 -650 -560 -645 {
-lab=#net5}
-N -450 -650 -415 -650 {
-lab=IN5}
-N -550 -465 -550 -455 {
-lab=VSS}
-N -550 -530 -500 -530 {
-lab=#net6}
-N -550 -530 -550 -525 {
-lab=#net6}
-N -440 -530 -405 -530 {
-lab=IN6}
-N -550 -335 -550 -325 {
-lab=VSS}
-N -550 -400 -500 -400 {
-lab=#net7}
-N -550 -400 -550 -395 {
-lab=#net7}
-N -440 -400 -405 -400 {
-lab=IN7}
-N -540 -215 -540 -205 {
-lab=VSS}
-N -540 -280 -490 -280 {
-lab=#net8}
-N -540 -280 -540 -275 {
-lab=#net8}
-N -430 -280 -395 -280 {
-lab=IN8}
 C {devices/lab_pin.sym} 1180 280 2 0 {name=p41 sig_type=std_logic lab=IN1}
 C {devices/lab_pin.sym} 1180 320 2 0 {name=p42 sig_type=std_logic lab=IN2}
 C {devices/lab_pin.sym} 1180 360 2 0 {name=p43 sig_type=std_logic lab=IN3}
@@ -142,8 +80,8 @@ C {devices/code_shown.sym} 820 -590 0 0 {name=s2 only_toplevel=false value="
 .param sel2 = 1.8
 
 .param bias = 0.8
-.param v_gate = 0.8
-.param v_drain = 0
+.param v_drain = 1.8
+.param v_gate = 0
 
 
 .options savecurrents
@@ -156,11 +94,11 @@ save all
 * V_drainの初期値、ステップ、終了値を設定
 let vd_val = 0
 let vd_step = 0.2
-let vd_stop = 1.8
+let vd_stop = 0.4
 
 * ループ処理でトランジェント解析を繰り返す
 while vd_val <= vd_stop
-    alter v_14 vd_val
+    alter V16 vd_val
     tran 100p 50n
     let vd_val = vd_val + vd_step
 end
@@ -190,70 +128,6 @@ C {devices/gnd.sym} 140 -350 0 0 {name=l8 lab=GND}
 C {devices/lab_pin.sym} 140 -410 0 0 {name=p38 sig_type=std_logic lab=VSS}
 C {devices/vsource.sym} 140 -380 0 0 {name=V15 value=0 savecurrent=false}
 C {sky130_fd_pr/corner.sym} 565 -400 0 0 {name=CORNER only_toplevel=true corner=tt}
-C {devices/vsource.sym} -150 -585 0 0 {name=V2 value="sin(0.9 0.9 10k)" savecurrent=false}
-C {devices/lab_pin.sym} -5 -620 2 0 {name=p17 sig_type=std_logic lab=IN1}
-C {devices/lab_pin.sym} -150 -545 0 0 {name=p18 sig_type=std_logic lab=VSS}
-C {devices/vsource.sym} -150 -245 0 0 {name=V3 value="sin(0.9 0.9 40k)" savecurrent=false}
-C {devices/lab_pin.sym} -5 -280 2 0 {name=p19 sig_type=std_logic lab=IN4}
-C {devices/lab_pin.sym} -150 -205 0 0 {name=p20 sig_type=std_logic lab=VSS}
-C {devices/vsource.sym} -150 -465 0 0 {name=V5 value="sin(0.9 0.9 20k)" savecurrent=false}
-C {devices/lab_pin.sym} -5 -500 2 0 {name=p25 sig_type=std_logic lab=IN2}
-C {devices/lab_pin.sym} -150 -425 0 0 {name=p37 sig_type=std_logic lab=VSS}
-C {devices/vsource.sym} -160 -355 0 0 {name=V6 value="sin(0.9 0.9 30k)" savecurrent=false}
-C {devices/lab_pin.sym} -5 -390 2 0 {name=p39 sig_type=std_logic lab=IN3}
-C {devices/lab_pin.sym} -160 -315 0 0 {name=p40 sig_type=std_logic lab=VSS}
-C {devices/res.sym} -70 -620 1 0 {name=R2
-value=1k
-footprint=1206
-device=resistor
-m=1}
-C {devices/res.sym} -65 -500 1 0 {name=R3
-value=1k
-footprint=1206
-device=resistor
-m=1}
-C {devices/res.sym} -70 -390 1 0 {name=R4
-value=1k
-footprint=1206
-device=resistor
-m=1}
-C {devices/res.sym} -60 -280 1 0 {name=R5
-value=1k
-footprint=1206
-device=resistor
-m=1}
-C {devices/vsource.sym} -560 -615 0 0 {name=V1 value="sin(0.9 0.9 50k)" savecurrent=false}
-C {devices/lab_pin.sym} -415 -650 2 0 {name=p45 sig_type=std_logic lab=IN5}
-C {devices/lab_pin.sym} -560 -575 0 0 {name=p47 sig_type=std_logic lab=VSS}
-C {devices/res.sym} -480 -650 1 0 {name=R1
-value=1k
-footprint=1206
-device=resistor
-m=1}
-C {devices/vsource.sym} -550 -495 0 0 {name=V4 value="sin(0.9 0.9 60k)" savecurrent=false}
-C {devices/lab_pin.sym} -405 -530 2 0 {name=p48 sig_type=std_logic lab=IN6}
-C {devices/lab_pin.sym} -550 -455 0 0 {name=p49 sig_type=std_logic lab=VSS}
-C {devices/res.sym} -470 -530 1 0 {name=R6
-value=1k
-footprint=1206
-device=resistor
-m=1}
-C {devices/vsource.sym} -550 -365 0 0 {name=V7 value="sin(0.9 0.9 70k)" savecurrent=false}
-C {devices/lab_pin.sym} -405 -400 2 0 {name=p50 sig_type=std_logic lab=IN7}
-C {devices/lab_pin.sym} -550 -325 0 0 {name=p51 sig_type=std_logic lab=VSS}
-C {devices/res.sym} -470 -400 1 0 {name=R7
-value=1k
-footprint=1206
-device=resistor
-m=1}
-C {devices/vsource.sym} -540 -245 0 0 {name=V8 value="sin(0.9 0.9 80k)" savecurrent=false}
-C {devices/lab_pin.sym} -395 -280 2 0 {name=p52 sig_type=std_logic lab=IN8}
-C {devices/lab_pin.sym} -540 -205 0 0 {name=p53 sig_type=std_logic lab=VSS}
-C {devices/res.sym} -460 -280 1 0 {name=R8
-value=1k
-footprint=1206
-device=resistor
-m=1}
 C {devices/vsource.sym} -430 -790 0 0 {name=V13 value=bias savecurrent=false}
 C {devices/gnd.sym} -430 -760 0 0 {name=l6 lab=GND}
 C {devices/lab_pin.sym} -430 -820 0 0 {name=p54 lab=BIAS}
