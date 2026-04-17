@@ -8,7 +8,7 @@
 
 # Change the settings below to match your design:
 # ------------------------------------------------
-set TOP_LEVEL_CELL     tt_um_anamux
+set TOP_LEVEL_CELL     tt_um_wakita_mux8onehot_cap
 set TEMPLATE_FILE      tt_analog_1x2.def
 set POWER_STRIPE_WIDTH 2um                 ;# The minimum width is 1.2um
 
@@ -49,6 +49,6 @@ foreach {name x} $POWER_STRIPES {
 # ----------------------------------
 save ${TOP_LEVEL_CELL}.mag
 file mkdir gds
-gds write gds/${TOP_LEVEL_CELL}.gds
+gds write ../gds/${TOP_LEVEL_CELL}.gds
 file mkdir lef
-lef write lef/${TOP_LEVEL_CELL}.lef -hide -pinonly
+lef write ../lef/${TOP_LEVEL_CELL}.lef -hide -pinonly
