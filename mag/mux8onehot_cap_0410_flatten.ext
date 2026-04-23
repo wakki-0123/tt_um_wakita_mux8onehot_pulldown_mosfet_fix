@@ -1,0 +1,850 @@
+timestamp 0
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+parameters sky130_fd_pr__nfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__special_nfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__nfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__special_pfet_01v8_hvt l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__pfet_01v8_hvt l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__pfet_01v8_lvt l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__nfet_01v8_lvt l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__cap_mim_m3_1 w=w l=l
+port "V_gate" 5 20102 -1254 20302 -1054 m1
+port "SEL2" 2 12496 4046 12696 4246 m1
+port "SEL0" 0 11430 3932 11630 4132 m1
+port "SEL1" 1 11346 4208 11546 4408 m1
+port "V_drain" 7 13162 7216 13362 7416 m1
+port "BIAS" 6 11638 7222 11838 7422 m1
+port "VDD" 3 12354 3724 12554 3924 m1
+port "VSS" 4 11820 8748 12020 8948 m1
+node "m2_12563_4633#" 2 65.6549 12563 4633 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17816 1116 0 0 0 0 0 0 0 0
+node "V_gate" 47999 5868.77 20102 -1254 m1 0 0 0 0 0 0 0 0 371200 13264 464000 16464 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 491776 29472 2671960 41034 0 0 0 0 0 0 0 0 0 0
+equiv "V_gate" "x1.x4.Z"
+equiv "V_gate" "x1.x5.Z"
+equiv "V_gate" "x1.Z"
+node "x1.x4.A" 121015 16792 14676 -1041 pdif 0 0 0 0 0 0 0 0 928000 33160 1160000 41160 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1229440 73680 6206591 105706 1794940 28460 0 0 0 0 0 0 0 0
+equiv "x1.x4.A" "x1.x3.x1.Z"
+equiv "x1.x4.A" "x1.x3.x2.Z"
+equiv "x1.x4.A" "x1.x3.x3.Z"
+equiv "x1.x4.A" "x1.x3.x4.Z"
+equiv "x1.x4.A" "x1.x3.Z4"
+equiv "x1.x4.A" "x1.x3.Z3"
+equiv "x1.x4.A" "x1.x3.Z2"
+equiv "x1.x4.A" "x1.x3.Z1"
+node "x1.x5.A" 121010 13867 14638 17 pdif 0 0 0 0 0 0 0 0 928000 33160 1160000 41160 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1229440 73680 5539055 97192 1443940 23480 0 0 0 0 0 0 0 0
+equiv "x1.x5.A" "x1.x2.x1.Z"
+equiv "x1.x5.A" "x1.x2.x2.Z"
+equiv "x1.x5.A" "x1.x2.x3.Z"
+equiv "x1.x5.A" "x1.x2.x4.Z"
+equiv "x1.x5.A" "x1.x2.Z4"
+equiv "x1.x5.A" "x1.x2.Z3"
+equiv "x1.x5.A" "x1.x2.Z2"
+equiv "x1.x5.A" "x1.x2.Z1"
+node "a_12486_4770#" 187 6.50454 12486 4770 ndif 0 0 0 0 0 0 0 0 4536 276 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_12432_4632#" 1517 233.62 12432 4632 p 0 0 0 0 0 0 0 0 4704 280 4536 276 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17436 1136 0 0 34448 1688 0 0 0 0 0 0 0 0 0 0 0 0
+node "x1.x1.nSEL0" 1879 615.695 11914 4988 pdif 0 0 0 0 0 0 0 0 7020 368 10800 508 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16722 1038 0 0 38118 1572 20964 980 30776 1288 0 0 0 0 0 0 0 0
+equiv "x1.x1.nSEL0" "x1.x1.x1.Y"
+equiv "x1.x1.nSEL0" "x1.x1.x7.A"
+node "x1.x3.GP1" 7883 3874.67 13002 5080 pdif 0 0 0 0 0 0 0 0 7020 368 10800 508 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 614320 18112 0 0 46292 2712 841002 25838 356882 15100 0 0 0 0 0 0 0 0
+equiv "x1.x3.GP1" "x1.x1.x11.Y"
+equiv "x1.x3.GP1" "x1.x1.gpo0"
+equiv "x1.x3.GP1" "x1.x2.x1.GP"
+equiv "x1.x3.GP1" "x1.x2.GP1"
+equiv "x1.x3.GP1" "x1.x3.x1.GP"
+node "x1.x3.GN1" 7699 8690.05 12458 4576 ndif 0 0 0 0 0 0 0 0 7280 372 19000 590 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 534924 16992 0 0 52884 3090 860581 23144 383304 17988 135060 3324 0 0 0 0 0 0
+equiv "x1.x3.GN1" "x1.x1.x7.X"
+equiv "x1.x3.GN1" "x1.x1.x11.A"
+equiv "x1.x3.GN1" "x1.x1.gno0"
+equiv "x1.x3.GN1" "x1.x2.x1.GN"
+equiv "x1.x3.GN1" "x1.x2.GN1"
+equiv "x1.x3.GN1" "x1.x3.x1.GN"
+node "a_12458_5176#" 210 4.46092 12458 5176 ndif 0 0 0 0 0 0 0 0 4032 264 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_12432_5048#" 1427 187.706 12432 5048 p 0 0 0 0 0 0 0 0 4368 272 4872 284 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16828 1116 0 0 37334 1456 0 0 0 0 0 0 0 0 0 0 0 0
+node "x1.x1.nSEL1" 1848 649.537 11914 5264 pdif 0 0 0 0 0 0 0 0 7020 368 10800 508 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15336 996 0 0 30652 1284 47680 2364 32588 1356 0 0 0 0 0 0 0 0
+equiv "x1.x1.nSEL1" "x1.x1.x2.Y"
+equiv "x1.x1.nSEL1" "x1.x1.x7.B"
+node "x1.x3.GP2" 7889 2842.21 13002 5356 pdif 0 0 0 0 0 0 0 0 7020 368 10800 508 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 614320 18112 0 0 46292 2712 853206 26340 394404 17762 0 0 0 0 0 0 0 0
+equiv "x1.x3.GP2" "x1.x1.x12.Y"
+equiv "x1.x3.GP2" "x1.x1.gpo1"
+equiv "x1.x3.GP2" "x1.x2.x2.GP"
+equiv "x1.x3.GP2" "x1.x2.GP2"
+equiv "x1.x3.GP2" "x1.x3.x2.GP"
+node "x1.x3.GN2" 8116 6780.89 12458 4996 ndif 0 0 0 0 0 0 0 0 6760 364 10400 504 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 534924 16992 0 0 42544 2888 852556 22994 399672 19550 136248 3116 0 0 0 0 0 0
+equiv "x1.x3.GN2" "x1.x1.x8.X"
+equiv "x1.x3.GN2" "x1.x1.x12.A"
+equiv "x1.x3.GN2" "x1.x1.gno1"
+equiv "x1.x3.GN2" "x1.x2.x2.GN"
+equiv "x1.x3.GN2" "x1.x2.GN2"
+equiv "x1.x3.GN2" "x1.x3.x2.GN"
+node "a_12432_5224#" 1547 201.418 12432 5224 p 0 0 0 0 0 0 0 0 4368 272 4368 272 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19164 1244 0 0 27226 1264 0 0 0 0 0 0 0 0 0 0 0 0
+node "x1.x5.GN" 7301 5660.16 11914 5540 pdif 0 0 0 0 0 0 0 0 7020 368 10800 508 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 555800 16440 0 0 47204 2750 788704 24000 194730 5544 645776 17290 53128 1488 0 0 0 0
+equiv "x1.x5.GN" "x1.x1.x18.Y"
+equiv "x1.x5.GN" "x1.x1.nSEL2"
+equiv "x1.x5.GN" "x1.x4.GP"
+node "SEL2" 7498 5789.06 12496 4046 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 593444 18664 0 0 22484 1902 875368 25574 207906 6140 591816 13366 138813 3292 0 0 0 0
+equiv "SEL2" "x1.x1.x18.A"
+equiv "SEL2" "x1.x1.SEL2"
+equiv "SEL2" "x1.x4.GN"
+equiv "SEL2" "x1.x5.GP"
+equiv "SEL2" "x1.select2"
+node "x1.x3.GP3" 7890 2833.25 13002 5724 pdif 0 0 0 0 0 0 0 0 7020 368 10800 508 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 614320 18112 0 0 46292 2712 899186 27270 479580 19962 0 0 0 0 0 0 0 0
+equiv "x1.x3.GP3" "x1.x1.x13.Y"
+equiv "x1.x3.GP3" "x1.x1.gpo2"
+equiv "x1.x3.GP3" "x1.x2.x3.GP"
+equiv "x1.x3.GP3" "x1.x2.GP3"
+equiv "x1.x3.GP3" "x1.x3.x3.GP"
+node "a_12458_5728#" 210 6.80147 12458 5728 ndif 0 0 0 0 0 0 0 0 4032 264 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "x1.x3.GN3" 8114 6392.61 12458 5548 ndif 0 0 0 0 0 0 0 0 6760 364 10400 504 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 534924 16992 0 0 42544 2888 872962 23224 529150 21686 146880 3152 0 0 0 0 0 0
+equiv "x1.x3.GN3" "x1.x1.x9.X"
+equiv "x1.x3.GN3" "x1.x1.x13.A"
+equiv "x1.x3.GN3" "x1.x1.gno2"
+equiv "x1.x3.GN3" "x1.x2.x3.GN"
+equiv "x1.x3.GN3" "x1.x2.GN3"
+equiv "x1.x3.GN3" "x1.x3.x3.GN"
+node "a_12432_5600#" 1427 199.569 12432 5600 p 0 0 0 0 0 0 0 0 4368 272 4872 284 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16828 1116 0 0 37334 1456 0 0 0 0 0 0 0 0 0 0 0 0
+node "x1.x3.GP4" 7884 4585.93 13002 6000 pdif 0 0 0 0 0 0 0 0 7020 368 10800 508 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 614320 18112 0 0 46292 2712 937944 27192 732373 22076 0 0 0 0 0 0 0 0
+equiv "x1.x3.GP4" "x1.x1.x14.Y"
+equiv "x1.x3.GP4" "x1.x1.gpo3"
+equiv "x1.x3.GP4" "x1.x2.x4.GP"
+equiv "x1.x3.GP4" "x1.x2.GP4"
+equiv "x1.x3.GP4" "x1.x3.x4.GP"
+node "a_12432_5776#" 1547 216.442 12432 5776 p 0 0 0 0 0 0 0 0 4368 272 4368 272 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19164 1244 0 0 27226 1264 0 0 0 0 0 0 0 0 0 0 0 0
+node "x1.x3.GN4" 7703 6511.75 12458 6232 ndif 0 0 0 0 0 0 0 0 7280 372 19000 590 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 534924 16992 0 0 52896 3098 926944 24504 694148 24746 167324 3268 0 0 0 0 0 0
+equiv "x1.x3.GN4" "x1.x1.x10.X"
+equiv "x1.x3.GN4" "x1.x1.x14.A"
+equiv "x1.x3.GN4" "x1.x1.gno3"
+equiv "x1.x3.GN4" "x1.x2.x4.GN"
+equiv "x1.x3.GN4" "x1.x2.GN4"
+equiv "x1.x3.GN4" "x1.x3.x4.GN"
+node "SEL0" 4091 1629.06 11430 3932 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 94528 5588 0 0 25562 1332 259532 8248 75134 3078 0 0 0 0 0 0 0 0
+equiv "SEL0" "x1.x1.x1.A"
+equiv "SEL0" "x1.x1.x8.B"
+equiv "SEL0" "x1.x1.x9.A_N"
+equiv "SEL0" "x1.x1.x10.B"
+equiv "SEL0" "x1.x1.SEL0"
+equiv "SEL0" "x1.select0"
+node "a_12486_6426#" 187 6.58329 12486 6426 ndif 0 0 0 0 0 0 0 0 4536 276 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "SEL1" 4120 1356.28 11346 4208 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 95914 5630 0 0 33749 1608 261820 9804 59012 3104 0 0 0 0 0 0 0 0
+equiv "SEL1" "x1.x1.x2.A"
+equiv "SEL1" "x1.x1.x8.A_N"
+equiv "SEL1" "x1.x1.x9.B"
+equiv "SEL1" "x1.x1.x10.A"
+equiv "SEL1" "x1.x1.SEL1"
+equiv "SEL1" "x1.select1"
+node "a_12432_6288#" 1517 273.35 12432 6288 p 0 0 0 0 0 0 0 0 4704 280 4536 276 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17436 1136 0 0 34448 1688 0 0 0 0 0 0 0 0 0 0 0 0
+node "x2.A8" 24946 10296.9 22091 1115 ndif 0 0 0 0 0 0 0 0 197200 7148 232000 8232 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20912 916 0 0 257448 15620 2005240 39714 1578484 25892 538960 5192 160004 2444 0 0 0 0
+equiv "x2.A8" "x1.x3.x4.A"
+equiv "x2.A8" "x1.x3.A4"
+equiv "x2.A8" "x1.A8"
+equiv "x2.A8" "x2.x8.A1"
+node "x2.A7" 24945 8121.2 21035 1107 ndif 0 0 0 0 0 0 0 0 197200 7148 232000 8232 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20912 916 0 0 257448 15620 1790359 36932 1556268 25720 418052 4688 160004 2444 0 0 0 0
+equiv "x2.A7" "x1.x3.x3.A"
+equiv "x2.A7" "x1.x3.A3"
+equiv "x2.A7" "x1.A7"
+equiv "x2.A7" "x2.x7.A1"
+node "x2.A6" 24945 7879.93 19965 1113 ndif 0 0 0 0 0 0 0 0 197200 7148 232000 8232 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20912 916 0 0 257448 15620 1505796 34022 1548604 25640 369908 4148 160004 2444 0 0 0 0
+equiv "x2.A6" "x1.x3.x2.A"
+equiv "x2.A6" "x1.x3.A2"
+equiv "x2.A6" "x1.A6"
+equiv "x2.A6" "x2.x6.A1"
+node "x2.A5" 24943 7686.01 18895 1111 ndif 0 0 0 0 0 0 0 0 197200 7148 232000 8232 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20912 916 0 0 257448 15620 1419109 31268 1524976 25400 230490 3768 160004 2444 0 0 0 0
+equiv "x2.A5" "x1.x3.x1.A"
+equiv "x2.A5" "x1.x3.A1"
+equiv "x2.A5" "x1.A5"
+equiv "x2.A5" "x2.x5.A1"
+node "x2.A4" 24941 6737.07 17777 1113 ndif 0 0 0 0 0 0 0 0 197200 7148 232000 8232 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20912 916 0 0 257448 15620 1312892 28738 1526208 25424 238052 3162 160004 2444 0 0 0 0
+equiv "x2.A4" "x1.x2.x4.A"
+equiv "x2.A4" "x1.x2.A4"
+equiv "x2.A4" "x1.A4"
+equiv "x2.A4" "x2.x4.A1"
+node "x2.A3" 24936 6678.18 16721 1105 ndif 0 0 0 0 0 0 0 0 197200 7148 232000 8232 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20912 916 0 0 257448 15620 1237741 23776 1532520 25480 379496 5104 160004 2444 0 0 0 0
+equiv "x2.A3" "x1.x2.x3.A"
+equiv "x2.A3" "x1.x2.A3"
+equiv "x2.A3" "x1.A3"
+equiv "x2.A3" "x2.x3.A1"
+node "x2.A2" 24936 7662.59 14742 7882 ndif 0 0 0 0 0 0 0 0 197200 7148 232000 8232 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20912 916 0 0 257448 15620 1211952 24010 1531928 25468 337606 3996 160004 2444 0 0 0 0
+equiv "x2.A2" "x1.x2.x2.A"
+equiv "x2.A2" "x1.x2.A2"
+equiv "x2.A2" "x1.A2"
+equiv "x2.A2" "x2.x2.A1"
+node "V_drain" 6133 11190.9 13162 7216 m1 0 0 0 0 0 0 0 0 92800 4128 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 56576 3872 2121820 55044 0 0 0 0 0 0 0 0 0 0
+equiv "V_drain" "x2.x1.VDD"
+equiv "V_drain" "x2.x2.VDD"
+equiv "V_drain" "x2.x3.VDD"
+equiv "V_drain" "x2.x4.VDD"
+equiv "V_drain" "x2.x5.VDD"
+equiv "V_drain" "x2.x6.VDD"
+equiv "V_drain" "x2.x7.VDD"
+equiv "V_drain" "x2.x8.VDD"
+equiv "V_drain" "x2.VDD"
+node "x2.A1" 24937 9511.5 12172 7886 ndif 0 0 0 0 0 0 0 0 197200 7148 232000 8232 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20912 916 0 0 257448 15620 1571939 29116 1454928 23900 10248 412 160004 2444 0 0 0 0
+equiv "x2.A1" "x1.x2.x1.A"
+equiv "x2.A1" "x1.x2.A1"
+equiv "x2.A1" "x1.A1"
+equiv "x2.A1" "x2.x1.A1"
+node "BIAS" 3294 24791.7 11638 7222 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 601600 9216 0 0 108800 7488 803908 22088 1687252 48116 164160 4768 1842280 25808 0 0 0 0
+equiv "BIAS" "x2.x1.BIAS"
+equiv "BIAS" "x2.x2.BIAS"
+equiv "BIAS" "x2.x3.BIAS"
+equiv "BIAS" "x2.x4.BIAS"
+equiv "BIAS" "x2.x5.BIAS"
+equiv "BIAS" "x2.x6.BIAS"
+equiv "BIAS" "x2.x7.BIAS"
+equiv "BIAS" "x2.x8.BIAS"
+equiv "BIAS" "x2.BIAS"
+node "VDD" 536340 115811 12354 3724 m1 0 0 0 0 23367984 112342 0 0 3372120 198632 301928 14344 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 175584 4016 0 0 6334532 222552 1184532 25924 2450444 34798 1088227 17436 197300 2594 0 0 0 0
+equiv "VDD" "x1.x1.x1.VPWR"
+equiv "VDD" "x1.x1.x1.VPB"
+equiv "VDD" "x1.x1.x2.VPWR"
+equiv "VDD" "x1.x1.x2.VPB"
+equiv "VDD" "x1.x1.x3.VPWR"
+equiv "VDD" "x1.x1.x4.VPWR"
+equiv "VDD" "x1.x1.x5.VPWR"
+equiv "VDD" "x1.x1.x6.VPWR"
+equiv "VDD" "x1.x1.x7.VPWR"
+equiv "VDD" "x1.x1.x7.VPB"
+equiv "VDD" "x1.x1.x7.VPWR"
+equiv "VDD" "x1.x1.x8.VPWR"
+equiv "VDD" "x1.x1.x8.VPB"
+equiv "VDD" "x1.x1.x8.VPWR"
+equiv "VDD" "x1.x1.x9.VPWR"
+equiv "VDD" "x1.x1.x9.VPB"
+equiv "VDD" "x1.x1.x9.VPWR"
+equiv "VDD" "x1.x1.x10.VPWR"
+equiv "VDD" "x1.x1.x10.VPB"
+equiv "VDD" "x1.x1.x10.VPWR"
+equiv "VDD" "x1.x1.x11.VPWR"
+equiv "VDD" "x1.x1.x11.VPB"
+equiv "VDD" "x1.x1.x12.VPWR"
+equiv "VDD" "x1.x1.x12.VPB"
+equiv "VDD" "x1.x1.x13.VPWR"
+equiv "VDD" "x1.x1.x13.VPB"
+equiv "VDD" "x1.x1.x14.VPWR"
+equiv "VDD" "x1.x1.x14.VPB"
+equiv "VDD" "x1.x1.x15.VPWR"
+equiv "VDD" "x1.x1.x15.VPB"
+equiv "VDD" "x1.x1.x15.VPWR"
+equiv "VDD" "x1.x1.x16.VPWR"
+equiv "VDD" "x1.x1.x16.VPB"
+equiv "VDD" "x1.x1.x16.VPWR"
+equiv "VDD" "x1.x1.x17.VPWR"
+equiv "VDD" "x1.x1.x17.VPB"
+equiv "VDD" "x1.x1.x17.VPWR"
+equiv "VDD" "x1.x1.x18.VPWR"
+equiv "VDD" "x1.x1.x18.VPB"
+equiv "VDD" "x1.x1.x19.VPWR"
+equiv "VDD" "x1.x1.x19.VPB"
+equiv "VDD" "x1.x1.x19.VPWR"
+equiv "VDD" "x1.x1.VPWR"
+equiv "VDD" "x1.x2.x1.VDD"
+equiv "VDD" "x1.x2.x2.VDD"
+equiv "VDD" "x1.x2.x3.VDD"
+equiv "VDD" "x1.x2.x4.VDD"
+equiv "VDD" "x1.x2.VDD"
+equiv "VDD" "x1.x3.x1.VDD"
+equiv "VDD" "x1.x3.x2.VDD"
+equiv "VDD" "x1.x3.x3.VDD"
+equiv "VDD" "x1.x3.x4.VDD"
+equiv "VDD" "x1.x3.VDD"
+equiv "VDD" "x1.x4.VDD"
+equiv "VDD" "x1.x5.VDD"
+equiv "VDD" "x1.VDD"
+substrate "x1.x1.x1.VNB" 0 0 11888 4588 p 0 0 0 0 0 0 0 0 368832 18112 3800520 223832 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 229344 4528 0 0 8683984 265696 4974831 93500 697380 19932 10022610 100764 2156528 39586 0 0 0 0
+equiv "x1.x1.x1.VNB" "x1.x1.x1.VGND"
+equiv "x1.x1.x1.VNB" "x1.x1.x2.VNB"
+equiv "x1.x1.x1.VNB" "x1.x1.x2.VGND"
+equiv "x1.x1.x1.VNB" "x1.x1.x7.VNB"
+equiv "x1.x1.x1.VNB" "x1.x1.x3.VGND"
+equiv "x1.x1.x1.VNB" "x1.x1.x4.VGND"
+equiv "x1.x1.x1.VNB" "x1.x1.x5.VGND"
+equiv "x1.x1.x1.VNB" "x1.x1.x6.VGND"
+equiv "x1.x1.x1.VNB" "x1.x1.x7.VGND"
+equiv "x1.x1.x1.VNB" "x1.x1.x8.VNB"
+equiv "x1.x1.x1.VNB" "x1.x1.x7.VGND"
+equiv "x1.x1.x1.VNB" "x1.x1.x8.VGND"
+equiv "x1.x1.x1.VNB" "x1.x1.x9.VNB"
+equiv "x1.x1.x1.VNB" "x1.x1.x8.VGND"
+equiv "x1.x1.x1.VNB" "x1.x1.x9.VGND"
+equiv "x1.x1.x1.VNB" "x1.x1.x10.VNB"
+equiv "x1.x1.x1.VNB" "x1.x1.x9.VGND"
+equiv "x1.x1.x1.VNB" "x1.x1.x10.VGND"
+equiv "x1.x1.x1.VNB" "x1.x1.x11.VNB"
+equiv "x1.x1.x1.VNB" "x1.x1.x10.VGND"
+equiv "x1.x1.x1.VNB" "x1.x1.x11.VGND"
+equiv "x1.x1.x1.VNB" "x1.x1.x12.VNB"
+equiv "x1.x1.x1.VNB" "x1.x1.x12.VGND"
+equiv "x1.x1.x1.VNB" "x1.x1.x13.VNB"
+equiv "x1.x1.x1.VNB" "x1.x1.x13.VGND"
+equiv "x1.x1.x1.VNB" "x1.x1.x14.VNB"
+equiv "x1.x1.x1.VNB" "x1.x1.x14.VGND"
+equiv "x1.x1.x1.VNB" "x1.x1.x15.VNB"
+equiv "x1.x1.x1.VNB" "x1.x1.x15.VGND"
+equiv "x1.x1.x1.VNB" "x1.x1.x16.VNB"
+equiv "x1.x1.x1.VNB" "x1.x1.x15.VGND"
+equiv "x1.x1.x1.VNB" "x1.x1.x16.VGND"
+equiv "x1.x1.x1.VNB" "x1.x1.x17.VNB"
+equiv "x1.x1.x1.VNB" "x1.x1.x16.VGND"
+equiv "x1.x1.x1.VNB" "x1.x1.x17.VGND"
+equiv "x1.x1.x1.VNB" "x1.x1.x18.VNB"
+equiv "x1.x1.x1.VNB" "x1.x1.x17.VGND"
+equiv "x1.x1.x1.VNB" "x1.x1.x18.VGND"
+equiv "x1.x1.x1.VNB" "x1.x1.x19.VNB"
+equiv "x1.x1.x1.VNB" "VSS"
+equiv "x1.x1.x1.VNB" "x1.x1.x19.VGND"
+equiv "x1.x1.x1.VNB" "x1.x1.VGND"
+equiv "x1.x1.x1.VNB" "x1.x2.x1.VSS"
+equiv "x1.x1.x1.VNB" "x1.x2.x2.VSS"
+equiv "x1.x1.x1.VNB" "x1.x2.x3.VSS"
+equiv "x1.x1.x1.VNB" "x1.x2.x4.VSS"
+equiv "x1.x1.x1.VNB" "x1.x2.VSS"
+equiv "x1.x1.x1.VNB" "x1.x3.x1.VSS"
+equiv "x1.x1.x1.VNB" "x1.x3.x2.VSS"
+equiv "x1.x1.x1.VNB" "x1.x3.x3.VSS"
+equiv "x1.x1.x1.VNB" "x1.x3.x4.VSS"
+equiv "x1.x1.x1.VNB" "x1.x3.VSS"
+equiv "x1.x1.x1.VNB" "x1.x4.VSS"
+equiv "x1.x1.x1.VNB" "x1.x5.VSS"
+equiv "x1.x1.x1.VNB" "x1.VSS"
+equiv "x1.x1.x1.VNB" "x2.x1.VSS"
+equiv "x1.x1.x1.VNB" "x2.x2.VSS"
+equiv "x1.x1.x1.VNB" "x2.x3.VSS"
+equiv "x1.x1.x1.VNB" "x2.x4.VSS"
+equiv "x1.x1.x1.VNB" "x2.x5.VSS"
+equiv "x1.x1.x1.VNB" "x2.x6.VSS"
+equiv "x1.x1.x1.VNB" "x2.x7.VSS"
+equiv "x1.x1.x1.VNB" "x2.x8.VSS"
+equiv "x1.x1.x1.VNB" "x2.VSS"
+cap "SEL2" "x1.x1.nSEL1" 165.344
+cap "x1.x3.GN1" "x2.A2" 240.441
+cap "SEL1" "x1.x3.GP4" 0.370347
+cap "x1.x3.GP2" "x2.A3" 316.491
+cap "x2.A1" "SEL1" 89.0669
+cap "x1.x3.GP3" "x1.x3.GN1" 75.9126
+cap "VDD" "SEL1" 2663.73
+cap "V_drain" "x2.A2" 429.724
+cap "m2_12563_4633#" "x1.x5.GN" 0.400369
+cap "SEL2" "SEL0" 700.034
+cap "a_12486_4770#" "x1.x1.nSEL1" 1.74959
+cap "a_12486_6426#" "SEL1" 0.884358
+cap "V_drain" "x1.x3.GP3" 5.0701
+cap "x1.x3.GP2" "x1.x5.A" 350.703
+cap "x1.x1.nSEL0" "SEL1" 137.595
+cap "a_12432_5776#" "x1.x3.GN3" 4.28905
+cap "x1.x3.GP2" "x2.A6" 4154.12
+cap "x1.x3.GP2" "x2.A8" 0.0247715
+cap "x1.x3.GP2" "x1.x3.GP4" 68.974
+cap "x1.x3.GP1" "SEL1" 0.843269
+cap "a_12486_4770#" "SEL0" 0.955494
+cap "x1.x3.GP2" "x2.A1" 126.734
+cap "x1.x3.GN2" "SEL1" 108.644
+cap "x1.x3.GP2" "VDD" 3267.15
+cap "SEL2" "x1.x4.A" 4968.06
+cap "x1.x3.GP3" "x2.A5" 137.986
+cap "x2.A1" "x1.x1.nSEL1" 0.0102617
+cap "VDD" "x1.x1.nSEL1" 473.101
+cap "x1.x3.GP2" "x1.x3.GP1" 101.109
+cap "SEL0" "x1.x3.GP4" 1.18472
+cap "x1.x5.GN" "a_12432_5224#" 0.325537
+cap "x1.x4.A" "x2.A3" 0.0164289
+cap "x1.x1.nSEL0" "x1.x1.nSEL1" 352.716
+cap "x1.x3.GP2" "x1.x3.GN2" 3790.53
+cap "m2_12563_4633#" "SEL2" 0.439954
+cap "x2.A1" "SEL0" 1.62592
+cap "VDD" "SEL0" 1151.73
+cap "x1.x3.GP1" "x1.x1.nSEL1" 0.117188
+cap "x1.x5.GN" "a_12432_5600#" 0.351284
+cap "x1.x5.A" "x1.x4.A" 2055.08
+cap "SEL0" "a_12486_6426#" 0.139648
+cap "x1.x3.GN4" "V_gate" 0.0907478
+cap "x1.x3.GN2" "x1.x1.nSEL1" 209.954
+cap "x1.x5.GN" "a_12432_6288#" 0.119435
+cap "x1.x1.nSEL0" "SEL0" 326.836
+cap "x1.x3.GP3" "x2.A2" 104.794
+cap "x2.A6" "x1.x4.A" 4520.53
+cap "x1.x3.GN1" "SEL1" 312.176
+cap "x2.A8" "x1.x4.A" 4515.11
+cap "x1.x4.A" "x1.x3.GP4" 331.5
+cap "x1.x3.GP1" "SEL0" 0.817658
+cap "VDD" "x1.x4.A" 14406.7
+cap "x1.x3.GN2" "SEL0" 114.399
+cap "V_drain" "SEL1" 0.0190164
+cap "x1.x3.GN4" "a_12458_5728#" 0.321952
+cap "x1.x3.GP2" "x1.x3.GN1" 68.9852
+cap "x1.x3.GP1" "x1.x4.A" 354.991
+cap "a_12432_5224#" "SEL2" 0.214448
+cap "x1.x3.GN2" "x1.x4.A" 429.477
+cap "VDD" "m2_12563_4633#" 140.083
+cap "x1.x3.GP2" "V_drain" 2.94858
+cap "x1.x3.GN1" "x1.x1.nSEL1" 34.871
+cap "SEL2" "a_12432_5600#" 9.15287
+cap "x1.x1.nSEL0" "m2_12563_4633#" 0.343129
+cap "x1.x3.GP2" "x2.A5" 115.058
+cap "x1.x3.GN1" "SEL0" 20.289
+cap "x2.A4" "x1.x3.GN3" 111.074
+cap "x1.x5.GN" "x1.x3.GN3" 0.163243
+cap "x1.x3.GP3" "SEL1" 3.32534
+cap "BIAS" "x2.A4" 502.239
+cap "BIAS" "x1.x5.GN" 9.14332
+cap "x2.A1" "a_12432_5224#" 0.0847319
+cap "x1.x3.GN1" "x1.x4.A" 428.411
+cap "VDD" "a_12432_5224#" 193.461
+cap "a_12432_6288#" "x1.x3.GP4" 0.29794
+cap "x1.x1.nSEL0" "a_12432_5224#" 1.17396
+cap "x2.A1" "a_12432_5600#" 0.197111
+cap "VDD" "a_12432_5600#" 171.399
+cap "x1.x3.GP2" "x2.A2" 4077.37
+cap "x2.A1" "a_12432_6288#" 13.1517
+cap "a_12432_4632#" "x1.x5.GN" 1.33625
+cap "VDD" "a_12432_6288#" 217.381
+cap "x1.x3.GP2" "x1.x3.GP3" 95.4805
+cap "x1.x1.nSEL0" "a_12432_5600#" 0.0190629
+cap "a_12432_5048#" "x1.x5.GN" 0.355897
+cap "m2_12563_4633#" "x1.x3.GN1" 69.3504
+cap "a_12432_5224#" "x1.x3.GN2" 16.9949
+cap "x2.A5" "x1.x4.A" 4520.88
+cap "a_12486_6426#" "a_12432_6288#" 6.58368
+cap "x1.x3.GN4" "a_12432_5776#" 3.64484
+cap "x1.x3.GP1" "a_12432_5600#" 0.0119024
+cap "x1.x3.GN2" "a_12432_5600#" 0.161198
+cap "x1.x3.GN2" "a_12432_6288#" 0.00758415
+cap "SEL2" "x1.x3.GN3" 2.34697
+cap "x1.x3.GP3" "SEL0" 0.273751
+cap "x1.x3.GN3" "x2.A3" 4112.05
+cap "a_12432_4632#" "SEL2" 1.49366
+cap "BIAS" "x2.A3" 613.957
+cap "a_12432_5224#" "x1.x3.GN1" 0.144526
+cap "x1.x3.GP3" "x1.x4.A" 358.391
+cap "a_12432_5048#" "SEL2" 0.144027
+cap "x2.A6" "x2.A7" 2847.98
+cap "x2.A6" "x1.x3.GN3" 437.084
+cap "x1.x5.A" "x1.x3.GN3" 430.194
+cap "x1.x3.GN1" "a_12432_5600#" 0.0731044
+cap "x2.A7" "x2.A8" 3550.47
+cap "a_12486_4770#" "a_12432_4632#" 6.58368
+cap "x2.A7" "x1.x3.GP4" 100.701
+cap "x2.A8" "x1.x3.GN3" 7.2881
+cap "x1.x3.GN3" "x1.x3.GP4" 71.9177
+cap "BIAS" "x2.A6" 480.244
+cap "x1.x5.GN" "a_12458_5176#" 0.108118
+cap "x1.x3.GP2" "SEL1" 0.030966
+cap "x2.A1" "x1.x3.GN3" 122.609
+cap "BIAS" "x2.A8" 435.679
+cap "BIAS" "x1.x3.GP4" 682.586
+cap "VDD" "x2.A7" 1614.32
+cap "VDD" "x1.x3.GN3" 768.845
+cap "V_drain" "a_12432_6288#" 0.0575356
+cap "VDD" "BIAS" 45.745
+cap "BIAS" "x2.A1" 523.759
+cap "x1.x1.nSEL0" "x1.x3.GN3" 0.0400698
+cap "a_12486_6426#" "x1.x3.GN3" 0.0107014
+cap "x1.x1.nSEL1" "SEL1" 275.603
+cap "x1.x3.GP1" "x2.A7" 0.00245837
+cap "x1.x3.GP1" "x1.x3.GN3" 52.3633
+cap "x1.x3.GN2" "x2.A7" 7.12552
+cap "x1.x3.GN2" "x1.x3.GN3" 175.928
+cap "VDD" "a_12432_4632#" 211.375
+cap "BIAS" "x1.x3.GP1" 0.0270791
+cap "x2.A1" "a_12432_5048#" 0.0467946
+cap "SEL0" "SEL1" 2069.11
+cap "VDD" "a_12432_5048#" 162.45
+cap "BIAS" "x1.x3.GN2" 0.272316
+cap "x1.x5.GN" "V_gate" 821.128
+cap "x1.x1.nSEL0" "a_12432_4632#" 81.6271
+cap "x1.x1.nSEL0" "a_12432_5048#" 30.9603
+cap "SEL2" "a_12458_5176#" 0.0449738
+cap "a_12432_4632#" "x1.x3.GN2" 39.6122
+cap "x1.x3.GP1" "a_12432_5048#" 0.997763
+cap "a_12432_5048#" "x1.x3.GN2" 106.139
+cap "x1.x3.GP2" "SEL0" 0.471391
+cap "x1.x5.GN" "a_12458_5728#" 0.0975782
+cap "x1.x3.GN4" "x2.A4" 4207.81
+cap "x1.x3.GP3" "a_12432_5600#" 1.35272
+cap "x1.x3.GN4" "x1.x5.GN" 0.902062
+cap "SEL0" "x1.x1.nSEL1" 169.954
+cap "x1.x3.GN1" "x1.x3.GN3" 85.6133
+cap "BIAS" "x1.x3.GN1" 0.00808489
+cap "m2_12563_4633#" "SEL1" 183.786
+cap "x1.x3.GP2" "x1.x4.A" 350.405
+cap "V_drain" "x1.x3.GN3" 3.96176
+cap "V_gate" "SEL2" 769.03
+cap "V_drain" "x2.A7" 486.748
+cap "BIAS" "V_drain" 3784.49
+cap "VDD" "a_12458_5176#" 0.431503
+cap "x2.A1" "a_12458_5176#" 0.0247778
+cap "a_12432_4632#" "x1.x3.GN1" 128.677
+cap "x2.A5" "x2.A7" 6.59606
+cap "x2.A5" "x1.x3.GN3" 117.928
+cap "a_12432_5048#" "x1.x3.GN1" 12.3566
+cap "x1.x1.nSEL0" "a_12458_5176#" 0.250898
+cap "BIAS" "x2.A5" 455.388
+cap "SEL2" "a_12458_5728#" 0.00346988
+cap "x1.x5.A" "V_gate" 4515.79
+cap "x1.x3.GN4" "SEL2" 0.05711
+cap "m2_12563_4633#" "x1.x1.nSEL1" 8.15042
+cap "x1.x3.GN2" "a_12458_5176#" 2.39479
+cap "a_12432_5224#" "SEL1" 254.026
+cap "V_gate" "x1.x3.GP4" 0.167708
+cap "VDD" "V_gate" 5307.87
+cap "m2_12563_4633#" "SEL0" 130.999
+cap "a_12432_5600#" "SEL1" 261.734
+cap "x1.x3.GN3" "x2.A2" 245.516
+cap "SEL1" "a_12432_6288#" 125.445
+cap "x1.x3.GN4" "x2.A3" 300.66
+cap "x1.x3.GP3" "x2.A7" 4135.8
+cap "x1.x3.GP3" "x1.x3.GN3" 5024.44
+cap "x1.x5.GN" "a_12432_5776#" 0.227147
+cap "BIAS" "x2.A2" 550.416
+cap "BIAS" "x1.x3.GP3" 4.31735
+cap "x1.x3.GN4" "x1.x5.A" 446.875
+cap "x1.x3.GN4" "x2.A6" 183.218
+cap "x1.x3.GP1" "V_gate" 0.238296
+cap "VDD" "a_12458_5728#" 1.49624
+cap "x2.A1" "a_12458_5728#" 0.0759237
+cap "x1.x3.GN4" "x2.A8" 3998.69
+cap "x1.x3.GN2" "V_gate" 0.0936236
+cap "x1.x3.GN4" "x1.x3.GP4" 5590.21
+cap "a_12432_5224#" "x1.x1.nSEL1" 41.068
+cap "x1.x3.GP2" "a_12432_5600#" 0.245547
+cap "x1.x3.GN4" "x2.A1" 144.278
+cap "x1.x3.GN4" "VDD" 1356.86
+cap "x1.x3.GN1" "a_12458_5176#" 0.0121665
+cap "a_12432_5600#" "x1.x1.nSEL1" 0.783988
+cap "x1.x3.GN4" "a_12486_6426#" 1.56242
+cap "x1.x3.GN4" "x1.x1.nSEL0" 0.0225909
+cap "a_12432_5224#" "SEL0" 143.958
+cap "x1.x3.GN2" "a_12458_5728#" 0.0310506
+cap "x1.x3.GN4" "x1.x3.GP1" 63.0337
+cap "x1.x3.GN4" "x1.x3.GN2" 58.0587
+cap "SEL0" "a_12432_5600#" 86.3532
+cap "SEL0" "a_12432_6288#" 220.366
+cap "V_gate" "x1.x3.GN1" 0.0426575
+cap "x1.x3.GN3" "SEL1" 272.271
+cap "BIAS" "SEL1" 1.84891
+cap "a_12432_5776#" "x1.x3.GP4" 0.495949
+cap "x1.x3.GN4" "x1.x3.GN1" 142.606
+cap "a_12432_4632#" "SEL1" 28.0305
+cap "x1.x3.GP2" "x2.A7" 155.121
+cap "a_12432_5048#" "SEL1" 34.1704
+cap "x1.x3.GP2" "x1.x3.GN3" 4556.76
+cap "x2.A1" "a_12432_5776#" 0.289704
+cap "VDD" "a_12432_5776#" 262.163
+cap "x1.x3.GP2" "BIAS" 2.30073
+cap "x1.x3.GN4" "V_drain" 2.34617
+cap "x1.x1.nSEL0" "a_12432_5776#" 0.0121051
+cap "x1.x1.nSEL1" "x1.x3.GN3" 12.418
+cap "x1.x3.GN4" "x2.A5" 973.063
+cap "x1.x3.GN2" "a_12432_5776#" 0.0956034
+cap "SEL0" "x1.x3.GN3" 254.198
+cap "x1.x3.GP3" "V_gate" 0.243784
+cap "a_12432_4632#" "x1.x1.nSEL1" 193.944
+cap "BIAS" "SEL0" 0.0267768
+cap "a_12432_5048#" "x1.x1.nSEL1" 73.3924
+cap "a_12432_5224#" "a_12432_5600#" 0.302451
+cap "x2.A7" "x1.x4.A" 4521.4
+cap "x1.x4.A" "x1.x3.GN3" 430.135
+cap "a_12432_4632#" "SEL0" 48.8882
+cap "a_12432_5048#" "SEL0" 246.189
+cap "x1.x3.GP3" "a_12458_5728#" 0.438956
+cap "x1.x3.GN4" "x2.A2" 113.495
+cap "x1.x3.GN4" "x1.x3.GP3" 5604.21
+cap "x1.x3.GN1" "a_12432_5776#" 0.0169197
+cap "SEL2" "x2.A4" 0.0676005
+cap "x1.x5.GN" "SEL2" 4050.85
+cap "x2.A4" "x2.A3" 2126.54
+cap "a_12432_4632#" "m2_12563_4633#" 12.9704
+cap "a_12486_4770#" "x1.x5.GN" 0.195171
+cap "x1.x5.GN" "x2.A3" 0.00703155
+cap "a_12458_5176#" "x1.x1.nSEL1" 0.957194
+cap "x1.x5.A" "x2.A4" 4515.1
+cap "x2.A4" "x2.A6" 2.04611
+cap "x2.A4" "x1.x3.GP4" 4660.1
+cap "x1.x5.A" "x1.x5.GN" 4010.22
+cap "a_12432_5224#" "x1.x3.GN3" 48.6458
+cap "VDD" "x2.A4" 1566.99
+cap "x1.x5.GN" "x1.x3.GP4" 0.111893
+cap "x2.A1" "x1.x5.GN" 558.172
+cap "x1.x3.GP2" "V_gate" 0.240687
+cap "a_12432_5600#" "x1.x3.GN3" 104.374
+cap "VDD" "x1.x5.GN" 3633.97
+cap "x1.x3.GN3" "a_12432_6288#" 0.0106566
+cap "x1.x3.GN4" "SEL1" 59.7757
+cap "x1.x3.GP1" "x2.A4" 107.945
+cap "x1.x1.nSEL0" "x1.x5.GN" 43.7175
+cap "x1.x3.GP3" "a_12432_5776#" 0.468601
+cap "BIAS" "a_12432_6288#" 0.862132
+cap "x1.x3.GN2" "x2.A4" 109.139
+cap "a_12486_4770#" "SEL2" 0.171474
+cap "a_12432_5048#" "a_12432_5224#" 185.422
+cap "SEL2" "x2.A3" 0.23941
+cap "x1.x3.GP1" "x1.x5.GN" 41.2388
+cap "x1.x5.GN" "x1.x3.GN2" 0.744894
+cap "x1.x3.GN4" "x1.x3.GP2" 59.5201
+cap "a_12458_5728#" "x1.x1.nSEL1" 0.407694
+cap "x1.x5.A" "SEL2" 5679.43
+cap "SEL2" "x1.x3.GP4" 6.9921
+cap "x2.A1" "SEL2" 54.7411
+cap "a_12458_5728#" "SEL0" 1.55773
+cap "V_gate" "x1.x4.A" 5505.49
+cap "VDD" "SEL2" 3639.03
+cap "x1.x5.A" "x2.A3" 4521.4
+cap "x1.x1.nSEL0" "SEL2" 131.472
+cap "x1.x3.GN4" "SEL0" 218.342
+cap "x1.x3.GN1" "x2.A4" 319.353
+cap "x2.A3" "x1.x3.GP4" 276.313
+cap "a_12486_4770#" "VDD" 0.909458
+cap "VDD" "x2.A3" 1612.13
+cap "x1.x3.GP1" "SEL2" 0.593771
+cap "x1.x5.GN" "x1.x3.GN1" 645.008
+cap "x1.x3.GN2" "SEL2" 3.24533
+cap "V_drain" "x2.A4" 569.932
+cap "x1.x5.A" "x1.x3.GP4" 278.763
+cap "x2.A6" "x2.A8" 8.95591
+cap "x2.A7" "x1.x3.GN3" 3998.67
+cap "x2.A6" "x1.x3.GP4" 77.7898
+cap "a_12432_5776#" "SEL1" 127.717
+cap "x2.A1" "x1.x5.A" 4520.65
+cap "x2.A8" "x1.x3.GP4" 4182.19
+cap "x1.x3.GN4" "x1.x4.A" 446.815
+cap "VDD" "x1.x5.A" 14131.7
+cap "BIAS" "x1.x3.GN3" 3.43382
+cap "VDD" "x2.A6" 1607.86
+cap "BIAS" "x2.A7" 511.86
+cap "a_12486_4770#" "x1.x3.GN2" 0.885624
+cap "x2.A1" "x1.x3.GP4" 212.08
+cap "VDD" "x2.A8" 1547
+cap "x1.x3.GP1" "x2.A3" 124.597
+cap "x2.A4" "x2.A5" 1713.92
+cap "VDD" "x1.x3.GP4" 2929.18
+cap "x1.x3.GN2" "x2.A3" 125.076
+cap "VDD" "x2.A1" 1726.58
+cap "a_12486_6426#" "x1.x3.GP4" 0.100291
+cap "x1.x3.GP1" "x2.A6" 126.954
+cap "x1.x5.A" "x1.x3.GP1" 353.82
+cap "VDD" "a_12486_6426#" 0.896686
+cap "a_12432_5048#" "x1.x3.GN3" 0.668047
+cap "x2.A1" "a_12486_6426#" 1.01658
+cap "x1.x3.GN2" "x2.A6" 3985.85
+cap "x1.x5.A" "x1.x3.GN2" 429.652
+cap "x1.x3.GP2" "a_12432_5776#" 0.0294859
+cap "x1.x1.nSEL0" "VDD" 387.038
+cap "x1.x3.GP1" "x1.x3.GP4" 79.2979
+cap "x1.x3.GN2" "x1.x3.GP4" 67.8454
+cap "x2.A1" "x1.x3.GP1" 4127.91
+cap "x1.x1.nSEL1" "a_12432_5776#" 0.158765
+cap "x1.x3.GN1" "SEL2" 83.1191
+cap "x2.A1" "x1.x3.GN2" 256.845
+cap "VDD" "x1.x3.GP1" 3284.53
+cap "VDD" "x1.x3.GN2" 700.951
+cap "x2.A4" "x2.A2" 0.239466
+cap "x1.x1.nSEL0" "x1.x3.GP1" 0.06209
+cap "x1.x1.nSEL0" "x1.x3.GN2" 154.394
+cap "x1.x3.GN2" "a_12486_6426#" 0.00813828
+cap "a_12432_4632#" "a_12432_5048#" 2.20733
+cap "x1.x3.GP3" "x2.A4" 334.482
+cap "a_12486_4770#" "x1.x3.GN1" 1.14351
+cap "SEL0" "a_12432_5776#" 279.858
+cap "x1.x3.GN1" "x2.A3" 251.811
+cap "x1.x3.GP3" "x1.x5.GN" 0.0382018
+cap "x1.x3.GP1" "x1.x3.GN2" 4579.41
+cap "SEL2" "x2.A5" 0.29403
+cap "V_drain" "x2.A3" 427.441
+cap "a_12458_5728#" "a_12432_5600#" 4.76373
+cap "x1.x3.GN1" "x2.A6" 0.277457
+cap "x1.x5.A" "x1.x3.GN1" 431.08
+cap "x1.x3.GN1" "x1.x3.GP4" 848.023
+cap "x1.x3.GN4" "a_12432_5600#" 0.683637
+cap "x2.A1" "x1.x3.GN1" 4454.8
+cap "x1.x3.GN4" "a_12432_6288#" 134.079
+cap "V_drain" "x2.A6" 499.383
+cap "VDD" "x1.x3.GN1" 904.352
+cap "V_drain" "x1.x3.GP4" 7.05967
+cap "V_drain" "x2.A8" 457.728
+cap "a_12458_5176#" "x1.x3.GN3" 0.0517036
+cap "x1.x1.nSEL0" "x1.x3.GN1" 2.61269
+cap "x2.A1" "V_drain" 445.486
+cap "x1.x5.A" "x2.A5" 0.00407066
+cap "VDD" "V_drain" 5.3189
+cap "x2.A5" "x2.A6" 2686.3
+cap "x2.A5" "x2.A8" 11.4261
+cap "x2.A5" "x1.x3.GP4" 1129.93
+cap "x1.x3.GP1" "x1.x3.GN1" 3002.77
+cap "x1.x3.GP3" "SEL2" 0.159743
+cap "x1.x3.GN2" "x1.x3.GN1" 144.039
+cap "VDD" "x2.A5" 1603.61
+cap "V_drain" "x1.x3.GP1" 2.13561
+cap "V_drain" "x1.x3.GN2" 2.41701
+cap "x2.A3" "x2.A2" 1872.47
+cap "a_12432_5048#" "a_12458_5176#" 4.76373
+cap "x1.x5.GN" "SEL1" 143.212
+cap "x1.x3.GP3" "x2.A3" 4096.7
+cap "x1.x3.GP1" "x2.A5" 4148.65
+cap "x1.x5.A" "x2.A2" 4520.52
+cap "x1.x3.GN2" "x2.A5" 256.268
+cap "x1.x3.GP3" "x2.A6" 428.329
+cap "x1.x5.A" "x1.x3.GP3" 358.718
+cap "x2.A2" "x1.x3.GP4" 209.293
+cap "x2.A1" "x2.A2" 1876.08
+cap "x1.x3.GP2" "x2.A4" 103.962
+cap "VDD" "x2.A2" 1607.43
+cap "x1.x3.GP3" "x2.A8" 165.076
+cap "x1.x3.GP3" "x1.x3.GP4" 108.492
+cap "x2.A1" "x1.x3.GP3" 122.167
+cap "a_12458_5728#" "x1.x3.GN3" 1.07257
+cap "x1.x3.GP2" "x1.x5.GN" 0.0170322
+cap "a_12432_5600#" "a_12432_5776#" 185.422
+cap "VDD" "x1.x3.GP3" 3245.68
+cap "x1.x3.GN4" "x2.A7" 279.844
+cap "x1.x3.GN4" "x1.x3.GN3" 191.732
+cap "V_drain" "x1.x3.GN1" 0.432835
+cap "x1.x3.GN4" "BIAS" 7.58797
+cap "x1.x3.GP1" "x2.A2" 259.633
+cap "x1.x5.GN" "x1.x1.nSEL1" 105.21
+cap "x1.x3.GN2" "x2.A2" 3993.32
+cap "x1.x3.GP1" "x1.x3.GP3" 61.8178
+cap "SEL2" "SEL1" 275.181
+cap "x1.x3.GP3" "x1.x3.GN2" 60.3647
+cap "x1.x3.GN1" "x2.A5" 3980.13
+cap "x1.x5.GN" "SEL0" 138.813
+cap "V_drain" "x2.A5" 515.089
+cap "x2.A4" "x1.x4.A" 3.92496
+cap "x1.x3.GP2" "SEL2" 0.434134
+cap "x1.x5.GN" "x1.x4.A" 4147.56
+device csubckt sky130_fd_pr__cap_mim_m3_1 29514 7848 29515 7849 w=400 l=400 "None" "BIAS" 1280 0 "x1.x1.x1.VNB" 0 370560,2504
+device csubckt sky130_fd_pr__cap_mim_m3_1 26896 7848 26897 7849 w=400 l=400 "None" "BIAS" 1280 0 "x1.x1.x1.VNB" 0 370560,2504
+device csubckt sky130_fd_pr__cap_mim_m3_1 24148 7840 24149 7841 w=400 l=400 "None" "BIAS" 1280 0 "x1.x1.x1.VNB" 0 370560,2504
+device csubckt sky130_fd_pr__cap_mim_m3_1 21568 7830 21569 7831 w=400 l=400 "None" "BIAS" 1280 0 "x1.x1.x1.VNB" 0 370560,2504
+device csubckt sky130_fd_pr__cap_mim_m3_1 18944 7820 18945 7821 w=400 l=400 "None" "BIAS" 1280 0 "x1.x1.x1.VNB" 0 370560,2504
+device csubckt sky130_fd_pr__cap_mim_m3_1 16374 7806 16375 7807 w=400 l=400 "None" "BIAS" 1280 0 "x1.x1.x1.VNB" 0 370560,2504
+device csubckt sky130_fd_pr__cap_mim_m3_1 13772 7820 13773 7821 w=400 l=400 "None" "BIAS" 1280 0 "x1.x1.x1.VNB" 0 370560,2504
+device csubckt sky130_fd_pr__cap_mim_m3_1 11202 7824 11203 7825 w=400 l=400 "None" "BIAS" 1280 0 "x1.x1.x1.VNB" 0 370560,2504
+device csubckt sky130_fd_pr__cap_mim_m3_1 31384 8394 31385 8395 w=400 l=400 "None" "x2.A8" 1280 0 "x1.x1.x1.VNB" 0 370560,2504
+device csubckt sky130_fd_pr__cap_mim_m3_1 28766 8394 28767 8395 w=400 l=400 "None" "x2.A7" 1280 0 "x1.x1.x1.VNB" 0 370560,2504
+device csubckt sky130_fd_pr__cap_mim_m3_1 26018 8386 26019 8387 w=400 l=400 "None" "x2.A6" 1280 0 "x1.x1.x1.VNB" 0 370560,2504
+device csubckt sky130_fd_pr__cap_mim_m3_1 23438 8376 23439 8377 w=400 l=400 "None" "x2.A5" 1280 0 "x1.x1.x1.VNB" 0 370560,2504
+device csubckt sky130_fd_pr__cap_mim_m3_1 20814 8366 20815 8367 w=400 l=400 "None" "x2.A4" 1280 0 "x1.x1.x1.VNB" 0 370560,2504
+device csubckt sky130_fd_pr__cap_mim_m3_1 18244 8352 18245 8353 w=400 l=400 "None" "x2.A3" 1280 0 "x1.x1.x1.VNB" 0 370560,2504
+device csubckt sky130_fd_pr__cap_mim_m3_1 15642 8366 15643 8367 w=400 l=400 "None" "x2.A2" 1280 0 "x1.x1.x1.VNB" 0 370560,2504
+device csubckt sky130_fd_pr__cap_mim_m3_1 13072 8370 13073 8371 w=400 l=400 "None" "x2.A1" 1280 0 "x1.x1.x1.VNB" 0 370560,2504
+device msubckt sky130_fd_pr__nfet_01v8_lvt 16987 -1575 16988 -1574 l=70 w=1600 "x1.x1.x1.VNB" "SEL2" 140 0 "x1.x4.A" 1600 92800,3316 "V_gate" 1600 92800,3316
+device msubckt sky130_fd_pr__nfet_01v8_lvt 15169 -1575 15170 -1574 l=70 w=1600 "x1.x1.x1.VNB" "SEL2" 140 0 "x1.x4.A" 1600 92800,3316 "V_gate" 1600 92800,3316
+device msubckt sky130_fd_pr__pfet_01v8_lvt 16912 -1111 16913 -1110 l=70 w=2000 "VDD" "x1.x5.GN" 140 0 "V_gate" 2000 116000,4116 "x1.x4.A" 2000 116000,4116
+device msubckt sky130_fd_pr__pfet_01v8_lvt 14676 -1111 14677 -1110 l=70 w=2000 "VDD" "x1.x5.GN" 140 0 "V_gate" 2000 116000,4116 "x1.x4.A" 2000 116000,4116
+device msubckt sky130_fd_pr__nfet_01v8_lvt 16949 -517 16950 -516 l=70 w=1600 "x1.x1.x1.VNB" "x1.x5.GN" 140 0 "x1.x5.A" 1600 92800,3316 "V_gate" 1600 92800,3316
+device msubckt sky130_fd_pr__nfet_01v8_lvt 15131 -517 15132 -516 l=70 w=1600 "x1.x1.x1.VNB" "x1.x5.GN" 140 0 "x1.x5.A" 1600 92800,3316 "V_gate" 1600 92800,3316
+device msubckt sky130_fd_pr__pfet_01v8_lvt 16874 -53 16875 -52 l=70 w=2000 "VDD" "SEL2" 140 0 "V_gate" 2000 116000,4116 "x1.x5.A" 2000 116000,4116
+device msubckt sky130_fd_pr__pfet_01v8_lvt 14638 -53 14639 -52 l=70 w=2000 "VDD" "SEL2" 140 0 "V_gate" 2000 116000,4116 "x1.x5.A" 2000 116000,4116
+device msubckt sky130_fd_pr__pfet_01v8_lvt 22613 790 22614 791 l=70 w=2000 "VDD" "x1.x3.GP4" 140 0 "x1.x4.A" 2000 116000,4116 "x2.A8" 2000 116000,4116
+device msubckt sky130_fd_pr__pfet_01v8_lvt 22613 3026 22614 3027 l=70 w=2000 "VDD" "x1.x3.GP4" 140 0 "x1.x4.A" 2000 116000,4116 "x2.A8" 2000 116000,4116
+device msubckt sky130_fd_pr__nfet_01v8_lvt 22149 1115 22150 1116 l=70 w=1600 "x1.x1.x1.VNB" "x1.x3.GN4" 140 0 "x2.A8" 1600 92800,3316 "x1.x4.A" 1600 92800,3316
+device msubckt sky130_fd_pr__nfet_01v8_lvt 22149 2933 22150 2934 l=70 w=1600 "x1.x1.x1.VNB" "x1.x3.GN4" 140 0 "x2.A8" 1600 92800,3316 "x1.x4.A" 1600 92800,3316
+device msubckt sky130_fd_pr__pfet_01v8_lvt 21557 782 21558 783 l=70 w=2000 "VDD" "x1.x3.GP3" 140 0 "x1.x4.A" 2000 116000,4116 "x2.A7" 2000 116000,4116
+device msubckt sky130_fd_pr__pfet_01v8_lvt 21557 3018 21558 3019 l=70 w=2000 "VDD" "x1.x3.GP3" 140 0 "x1.x4.A" 2000 116000,4116 "x2.A7" 2000 116000,4116
+device msubckt sky130_fd_pr__nfet_01v8_lvt 21093 1107 21094 1108 l=70 w=1600 "x1.x1.x1.VNB" "x1.x3.GN3" 140 0 "x2.A7" 1600 92800,3316 "x1.x4.A" 1600 92800,3316
+device msubckt sky130_fd_pr__nfet_01v8_lvt 21093 2925 21094 2926 l=70 w=1600 "x1.x1.x1.VNB" "x1.x3.GN3" 140 0 "x2.A7" 1600 92800,3316 "x1.x4.A" 1600 92800,3316
+device msubckt sky130_fd_pr__pfet_01v8_lvt 20487 788 20488 789 l=70 w=2000 "VDD" "x1.x3.GP2" 140 0 "x1.x4.A" 2000 116000,4116 "x2.A6" 2000 116000,4116
+device msubckt sky130_fd_pr__pfet_01v8_lvt 20487 3024 20488 3025 l=70 w=2000 "VDD" "x1.x3.GP2" 140 0 "x1.x4.A" 2000 116000,4116 "x2.A6" 2000 116000,4116
+device msubckt sky130_fd_pr__nfet_01v8_lvt 20023 1113 20024 1114 l=70 w=1600 "x1.x1.x1.VNB" "x1.x3.GN2" 140 0 "x2.A6" 1600 92800,3316 "x1.x4.A" 1600 92800,3316
+device msubckt sky130_fd_pr__nfet_01v8_lvt 20023 2931 20024 2932 l=70 w=1600 "x1.x1.x1.VNB" "x1.x3.GN2" 140 0 "x2.A6" 1600 92800,3316 "x1.x4.A" 1600 92800,3316
+device msubckt sky130_fd_pr__pfet_01v8_lvt 19417 786 19418 787 l=70 w=2000 "VDD" "x1.x3.GP1" 140 0 "x1.x4.A" 2000 116000,4116 "x2.A5" 2000 116000,4116
+device msubckt sky130_fd_pr__pfet_01v8_lvt 19417 3022 19418 3023 l=70 w=2000 "VDD" "x1.x3.GP1" 140 0 "x1.x4.A" 2000 116000,4116 "x2.A5" 2000 116000,4116
+device msubckt sky130_fd_pr__nfet_01v8_lvt 18953 1111 18954 1112 l=70 w=1600 "x1.x1.x1.VNB" "x1.x3.GN1" 140 0 "x2.A5" 1600 92800,3316 "x1.x4.A" 1600 92800,3316
+device msubckt sky130_fd_pr__nfet_01v8_lvt 18953 2929 18954 2930 l=70 w=1600 "x1.x1.x1.VNB" "x1.x3.GN1" 140 0 "x2.A5" 1600 92800,3316 "x1.x4.A" 1600 92800,3316
+device msubckt sky130_fd_pr__pfet_01v8_lvt 18299 788 18300 789 l=70 w=2000 "VDD" "x1.x3.GP4" 140 0 "x1.x5.A" 2000 116000,4116 "x2.A4" 2000 116000,4116
+device msubckt sky130_fd_pr__pfet_01v8_lvt 18299 3024 18300 3025 l=70 w=2000 "VDD" "x1.x3.GP4" 140 0 "x1.x5.A" 2000 116000,4116 "x2.A4" 2000 116000,4116
+device msubckt sky130_fd_pr__nfet_01v8_lvt 17835 1113 17836 1114 l=70 w=1600 "x1.x1.x1.VNB" "x1.x3.GN4" 140 0 "x2.A4" 1600 92800,3316 "x1.x5.A" 1600 92800,3316
+device msubckt sky130_fd_pr__nfet_01v8_lvt 17835 2931 17836 2932 l=70 w=1600 "x1.x1.x1.VNB" "x1.x3.GN4" 140 0 "x2.A4" 1600 92800,3316 "x1.x5.A" 1600 92800,3316
+device msubckt sky130_fd_pr__pfet_01v8_lvt 17243 780 17244 781 l=70 w=2000 "VDD" "x1.x3.GP3" 140 0 "x1.x5.A" 2000 116000,4116 "x2.A3" 2000 116000,4116
+device msubckt sky130_fd_pr__pfet_01v8_lvt 17243 3016 17244 3017 l=70 w=2000 "VDD" "x1.x3.GP3" 140 0 "x1.x5.A" 2000 116000,4116 "x2.A3" 2000 116000,4116
+device msubckt sky130_fd_pr__nfet_01v8_lvt 16779 1105 16780 1106 l=70 w=1600 "x1.x1.x1.VNB" "x1.x3.GN3" 140 0 "x2.A3" 1600 92800,3316 "x1.x5.A" 1600 92800,3316
+device msubckt sky130_fd_pr__nfet_01v8_lvt 16779 2923 16780 2924 l=70 w=1600 "x1.x1.x1.VNB" "x1.x3.GN3" 140 0 "x2.A3" 1600 92800,3316 "x1.x5.A" 1600 92800,3316
+device msubckt sky130_fd_pr__pfet_01v8_lvt 16173 786 16174 787 l=70 w=2000 "VDD" "x1.x3.GP2" 140 0 "x1.x5.A" 2000 116000,4116 "x2.A2" 2000 116000,4116
+device msubckt sky130_fd_pr__pfet_01v8_lvt 16173 3022 16174 3023 l=70 w=2000 "VDD" "x1.x3.GP2" 140 0 "x1.x5.A" 2000 116000,4116 "x2.A2" 2000 116000,4116
+device msubckt sky130_fd_pr__nfet_01v8_lvt 15709 1111 15710 1112 l=70 w=1600 "x1.x1.x1.VNB" "x1.x3.GN2" 140 0 "x2.A2" 1600 92800,3316 "x1.x5.A" 1600 92800,3316
+device msubckt sky130_fd_pr__nfet_01v8_lvt 15709 2929 15710 2930 l=70 w=1600 "x1.x1.x1.VNB" "x1.x3.GN2" 140 0 "x2.A2" 1600 92800,3316 "x1.x5.A" 1600 92800,3316
+device msubckt sky130_fd_pr__pfet_01v8_lvt 15103 784 15104 785 l=70 w=2000 "VDD" "x1.x3.GP1" 140 0 "x1.x5.A" 2000 116000,4116 "x2.A1" 2000 116000,4116
+device msubckt sky130_fd_pr__pfet_01v8_lvt 15103 3020 15104 3021 l=70 w=2000 "VDD" "x1.x3.GP1" 140 0 "x1.x5.A" 2000 116000,4116 "x2.A1" 2000 116000,4116
+device msubckt sky130_fd_pr__nfet_01v8_lvt 14639 1109 14640 1110 l=70 w=1600 "x1.x1.x1.VNB" "x1.x3.GN1" 140 0 "x2.A1" 1600 92800,3316 "x1.x5.A" 1600 92800,3316
+device msubckt sky130_fd_pr__nfet_01v8_lvt 14639 2927 14640 2928 l=70 w=1600 "x1.x1.x1.VNB" "x1.x3.GN1" 140 0 "x2.A1" 1600 92800,3316 "x1.x5.A" 1600 92800,3316
+device msubckt sky130_fd_pr__nfet_01v8 13342 4588 13343 4589 l=210 w=110 "x1.x1.x1.VNB" "VDD" 420 0 "x1.x1.x1.VNB" 0 0 "x1.x1.x1.VNB" 220 5720,324
+device msubckt sky130_fd_pr__pfet_01v8_hvt 13002 4588 13003 4589 l=210 w=174 "VDD" "x1.x1.x1.VNB" 420 0 "VDD" 0 0 "VDD" 348 9048,452
+device msubckt sky130_fd_pr__pfet_01v8_hvt 12708 4632 12709 4633 l=30 w=200 "VDD" "a_12432_4632#" 60 0 "x1.x3.GN1" 200 19000,590 "VDD" 200 6662,278
+device msubckt sky130_fd_pr__nfet_01v8 12458 4632 12459 4633 l=30 w=130 "x1.x1.x1.VNB" "a_12432_4632#" 60 0 "x1.x3.GN1" 130 7280,372 "x1.x1.x1.VNB" 130 4472,208
+device msubckt sky130_fd_pr__pfet_01v8_hvt 12782 4740 12783 4741 l=30 w=84 "VDD" "x1.x1.nSEL1" 60 0 "VDD" 84 6662,278 "a_12432_4632#" 84 2268,138
+device msubckt sky130_fd_pr__nfet_01v8 12486 4740 12487 4741 l=30 w=84 "x1.x1.x1.VNB" "x1.x1.nSEL1" 60 0 "x1.x1.x1.VNB" 84 4472,208 "a_12486_4770#" 84 2268,138
+device msubckt sky130_fd_pr__nfet_01v8 12254 4588 12255 4589 l=210 w=110 "x1.x1.x1.VNB" "VDD" 420 0 "x1.x1.x1.VNB" 0 0 "x1.x1.x1.VNB" 220 5720,324
+device msubckt sky130_fd_pr__pfet_01v8_hvt 11914 4588 11915 4589 l=210 w=174 "VDD" "x1.x1.x1.VNB" 420 0 "VDD" 0 0 "VDD" 348 9048,452
+device msubckt sky130_fd_pr__pfet_01v8_hvt 12782 4824 12783 4825 l=30 w=84 "VDD" "x1.x1.nSEL0" 60 0 "a_12432_4632#" 84 2268,138 "VDD" 84 4704,280
+device msubckt sky130_fd_pr__nfet_01v8 12486 4824 12487 4825 l=30 w=84 "x1.x1.x1.VNB" "x1.x1.nSEL0" 60 0 "a_12486_4770#" 84 2268,138 "a_12432_4632#" 84 4704,280
+device msubckt sky130_fd_pr__nfet_01v8 12234 4958 12235 4959 l=30 w=130 "x1.x1.x1.VNB" "SEL0" 60 0 "x1.x1.x1.VNB" 130 6760,364 "x1.x1.nSEL0" 130 7020,368
+device msubckt sky130_fd_pr__pfet_01v8_hvt 11914 4958 11915 4959 l=30 w=200 "VDD" "SEL0" 60 0 "VDD" 200 10400,504 "x1.x1.nSEL0" 200 10800,508
+device msubckt sky130_fd_pr__nfet_01v8 13322 5050 13323 5051 l=30 w=130 "x1.x1.x1.VNB" "x1.x3.GN1" 60 0 "x1.x1.x1.VNB" 130 6760,364 "x1.x3.GP1" 130 7020,368
+device msubckt sky130_fd_pr__pfet_01v8_hvt 13002 5050 13003 5051 l=30 w=200 "VDD" "x1.x3.GN1" 60 0 "VDD" 200 10400,504 "x1.x3.GP1" 200 10800,508
+device msubckt sky130_fd_pr__pfet_01v8_hvt 12708 5048 12709 5049 l=30 w=200 "VDD" "a_12432_5048#" 60 0 "x1.x3.GN2" 200 10400,504 "VDD" 200 9116,348
+device msubckt sky130_fd_pr__nfet_01v8 12458 5048 12459 5049 l=30 w=130 "x1.x1.x1.VNB" "a_12432_5048#" 60 0 "x1.x3.GN2" 130 6760,364 "x1.x1.x1.VNB" 130 4052,198
+device msubckt sky130_fd_pr__nfet_01v8 12234 5042 12235 5043 l=30 w=130 "x1.x1.x1.VNB" "SEL0" 60 0 "x1.x1.nSEL0" 130 7020,368 "x1.x1.x1.VNB" 130 6760,364
+device msubckt sky130_fd_pr__pfet_01v8_hvt 11914 5042 11915 5043 l=30 w=200 "VDD" "SEL0" 60 0 "x1.x1.nSEL0" 200 10800,508 "VDD" 200 10400,504
+device msubckt sky130_fd_pr__nfet_01v8 13322 5134 13323 5135 l=30 w=130 "x1.x1.x1.VNB" "x1.x3.GN1" 60 0 "x1.x3.GP1" 130 7020,368 "x1.x1.x1.VNB" 130 6760,364
+device msubckt sky130_fd_pr__pfet_01v8_hvt 13002 5134 13003 5135 l=30 w=200 "VDD" "x1.x3.GN1" 60 0 "x1.x3.GP1" 200 10800,508 "VDD" 200 10400,504
+device msubckt sky130_fd_pr__nfet_01v8 12458 5146 12459 5147 l=30 w=84 "x1.x1.x1.VNB" "SEL0" 60 0 "x1.x1.x1.VNB" 84 4052,198 "a_12458_5176#" 84 2016,132
+device msubckt sky130_fd_pr__pfet_01v8_hvt 12824 5226 12825 5227 l=30 w=84 "VDD" "SEL0" 60 0 "VDD" 84 9116,348 "a_12432_5048#" 84 2436,142
+device msubckt sky130_fd_pr__nfet_01v8 12458 5224 12459 5225 l=30 w=84 "x1.x1.x1.VNB" "a_12432_5224#" 60 0 "a_12458_5176#" 84 2016,132 "a_12432_5048#" 84 4368,272
+device msubckt sky130_fd_pr__nfet_01v8 13322 5326 13323 5327 l=30 w=130 "x1.x1.x1.VNB" "x1.x3.GN2" 60 0 "x1.x1.x1.VNB" 130 6760,364 "x1.x3.GP2" 130 7020,368
+device msubckt sky130_fd_pr__pfet_01v8_hvt 13002 5326 13003 5327 l=30 w=200 "VDD" "x1.x3.GN2" 60 0 "VDD" 200 10400,504 "x1.x3.GP2" 200 10800,508
+device msubckt sky130_fd_pr__pfet_01v8_hvt 12824 5314 12825 5315 l=30 w=84 "VDD" "a_12432_5224#" 60 0 "a_12432_5048#" 84 2436,142 "VDD" 84 2856,152
+device msubckt sky130_fd_pr__nfet_01v8 12234 5234 12235 5235 l=30 w=130 "x1.x1.x1.VNB" "SEL1" 60 0 "x1.x1.x1.VNB" 130 6760,364 "x1.x1.nSEL1" 130 7020,368
+device msubckt sky130_fd_pr__pfet_01v8_hvt 11914 5234 11915 5235 l=30 w=200 "VDD" "SEL1" 60 0 "VDD" 200 10400,504 "x1.x1.nSEL1" 200 10800,508
+device msubckt sky130_fd_pr__nfet_01v8 12234 5318 12235 5319 l=30 w=130 "x1.x1.x1.VNB" "SEL1" 60 0 "x1.x1.nSEL1" 130 7020,368 "x1.x1.x1.VNB" 130 6760,364
+device msubckt sky130_fd_pr__pfet_01v8_hvt 11914 5318 11915 5319 l=30 w=200 "VDD" "SEL1" 60 0 "x1.x1.nSEL1" 200 10800,508 "VDD" 200 10400,504
+device msubckt sky130_fd_pr__nfet_01v8 13322 5410 13323 5411 l=30 w=130 "x1.x1.x1.VNB" "x1.x3.GN2" 60 0 "x1.x3.GP2" 130 7020,368 "x1.x1.x1.VNB" 130 6760,364
+device msubckt sky130_fd_pr__pfet_01v8_hvt 13002 5410 13003 5411 l=30 w=200 "VDD" "x1.x3.GN2" 60 0 "x1.x3.GP2" 200 10800,508 "VDD" 200 10400,504
+device msubckt sky130_fd_pr__pfet_01v8_hvt 12824 5412 12825 5413 l=30 w=84 "VDD" "SEL1" 60 0 "VDD" 84 2856,152 "a_12432_5224#" 84 4368,272
+device msubckt sky130_fd_pr__nfet_01v8 12458 5412 12459 5413 l=30 w=84 "x1.x1.x1.VNB" "SEL1" 60 0 "a_12432_5224#" 84 4368,272 "x1.x1.x1.VNB" 84 4368,272
+device msubckt sky130_fd_pr__nfet_01v8 12234 5510 12235 5511 l=30 w=130 "x1.x1.x1.VNB" "SEL2" 60 0 "x1.x1.x1.VNB" 130 6760,364 "x1.x5.GN" 130 7020,368
+device msubckt sky130_fd_pr__pfet_01v8_hvt 11914 5510 11915 5511 l=30 w=200 "VDD" "SEL2" 60 0 "VDD" 200 10400,504 "x1.x5.GN" 200 10800,508
+device msubckt sky130_fd_pr__pfet_01v8_hvt 12708 5600 12709 5601 l=30 w=200 "VDD" "a_12432_5600#" 60 0 "x1.x3.GN3" 200 10400,504 "VDD" 200 9116,348
+device msubckt sky130_fd_pr__nfet_01v8 12458 5600 12459 5601 l=30 w=130 "x1.x1.x1.VNB" "a_12432_5600#" 60 0 "x1.x3.GN3" 130 6760,364 "x1.x1.x1.VNB" 130 4052,198
+device msubckt sky130_fd_pr__nfet_01v8 12234 5594 12235 5595 l=30 w=130 "x1.x1.x1.VNB" "SEL2" 60 0 "x1.x5.GN" 130 7020,368 "x1.x1.x1.VNB" 130 6760,364
+device msubckt sky130_fd_pr__pfet_01v8_hvt 11914 5594 11915 5595 l=30 w=200 "VDD" "SEL2" 60 0 "x1.x5.GN" 200 10800,508 "VDD" 200 10400,504
+device msubckt sky130_fd_pr__nfet_01v8 13322 5694 13323 5695 l=30 w=130 "x1.x1.x1.VNB" "x1.x3.GN3" 60 0 "x1.x1.x1.VNB" 130 6760,364 "x1.x3.GP3" 130 7020,368
+device msubckt sky130_fd_pr__pfet_01v8_hvt 13002 5694 13003 5695 l=30 w=200 "VDD" "x1.x3.GN3" 60 0 "VDD" 200 10400,504 "x1.x3.GP3" 200 10800,508
+device msubckt sky130_fd_pr__nfet_01v8 12458 5698 12459 5699 l=30 w=84 "x1.x1.x1.VNB" "SEL1" 60 0 "x1.x1.x1.VNB" 84 4052,198 "a_12458_5728#" 84 2016,132
+device msubckt sky130_fd_pr__nfet_01v8 13322 5778 13323 5779 l=30 w=130 "x1.x1.x1.VNB" "x1.x3.GN3" 60 0 "x1.x3.GP3" 130 7020,368 "x1.x1.x1.VNB" 130 6760,364
+device msubckt sky130_fd_pr__pfet_01v8_hvt 13002 5778 13003 5779 l=30 w=200 "VDD" "x1.x3.GN3" 60 0 "x1.x3.GP3" 200 10800,508 "VDD" 200 10400,504
+device msubckt sky130_fd_pr__pfet_01v8_hvt 12824 5778 12825 5779 l=30 w=84 "VDD" "SEL1" 60 0 "VDD" 84 9116,348 "a_12432_5600#" 84 2436,142
+device msubckt sky130_fd_pr__nfet_01v8 12458 5776 12459 5777 l=30 w=84 "x1.x1.x1.VNB" "a_12432_5776#" 60 0 "a_12458_5728#" 84 2016,132 "a_12432_5600#" 84 4368,272
+device msubckt sky130_fd_pr__pfet_01v8_hvt 12824 5866 12825 5867 l=30 w=84 "VDD" "a_12432_5776#" 60 0 "a_12432_5600#" 84 2436,142 "VDD" 84 2856,152
+device msubckt sky130_fd_pr__nfet_01v8 13322 5970 13323 5971 l=30 w=130 "x1.x1.x1.VNB" "x1.x3.GN4" 60 0 "x1.x1.x1.VNB" 130 6760,364 "x1.x3.GP4" 130 7020,368
+device msubckt sky130_fd_pr__pfet_01v8_hvt 13002 5970 13003 5971 l=30 w=200 "VDD" "x1.x3.GN4" 60 0 "VDD" 200 10400,504 "x1.x3.GP4" 200 10800,508
+device msubckt sky130_fd_pr__pfet_01v8_hvt 12824 5964 12825 5965 l=30 w=84 "VDD" "SEL0" 60 0 "VDD" 84 2856,152 "a_12432_5776#" 84 4368,272
+device msubckt sky130_fd_pr__nfet_01v8 12458 5964 12459 5965 l=30 w=84 "x1.x1.x1.VNB" "SEL0" 60 0 "a_12432_5776#" 84 4368,272 "x1.x1.x1.VNB" 84 4368,272
+device msubckt sky130_fd_pr__nfet_01v8 13322 6054 13323 6055 l=30 w=130 "x1.x1.x1.VNB" "x1.x3.GN4" 60 0 "x1.x3.GP4" 130 7020,368 "x1.x1.x1.VNB" 130 6760,364
+device msubckt sky130_fd_pr__pfet_01v8_hvt 13002 6054 13003 6055 l=30 w=200 "VDD" "x1.x3.GN4" 60 0 "x1.x3.GP4" 200 10800,508 "VDD" 200 10400,504
+device msubckt sky130_fd_pr__nfet_01v8 12254 5876 12255 5877 l=210 w=110 "x1.x1.x1.VNB" "VDD" 420 0 "x1.x1.x1.VNB" 0 0 "x1.x1.x1.VNB" 220 5720,324
+device msubckt sky130_fd_pr__pfet_01v8_hvt 11914 5876 11915 5877 l=210 w=174 "VDD" "x1.x1.x1.VNB" 420 0 "VDD" 0 0 "VDD" 348 9048,452
+device msubckt sky130_fd_pr__nfet_01v8 13342 6244 13343 6245 l=210 w=110 "x1.x1.x1.VNB" "VDD" 420 0 "x1.x1.x1.VNB" 0 0 "x1.x1.x1.VNB" 220 5720,324
+device msubckt sky130_fd_pr__pfet_01v8_hvt 13002 6244 13003 6245 l=210 w=174 "VDD" "x1.x1.x1.VNB" 420 0 "VDD" 0 0 "VDD" 348 9048,452
+device msubckt sky130_fd_pr__pfet_01v8_hvt 12708 6288 12709 6289 l=30 w=200 "VDD" "a_12432_6288#" 60 0 "x1.x3.GN4" 200 19000,590 "VDD" 200 6662,278
+device msubckt sky130_fd_pr__nfet_01v8 12458 6288 12459 6289 l=30 w=130 "x1.x1.x1.VNB" "a_12432_6288#" 60 0 "x1.x3.GN4" 130 7280,372 "x1.x1.x1.VNB" 130 4472,208
+device msubckt sky130_fd_pr__pfet_01v8_hvt 12782 6396 12783 6397 l=30 w=84 "VDD" "SEL0" 60 0 "VDD" 84 6662,278 "a_12432_6288#" 84 2268,138
+device msubckt sky130_fd_pr__nfet_01v8 12486 6396 12487 6397 l=30 w=84 "x1.x1.x1.VNB" "SEL0" 60 0 "x1.x1.x1.VNB" 84 4472,208 "a_12486_6426#" 84 2268,138
+device msubckt sky130_fd_pr__pfet_01v8_hvt 12782 6480 12783 6481 l=30 w=84 "VDD" "SEL1" 60 0 "a_12432_6288#" 84 2268,138 "VDD" 84 4704,280
+device msubckt sky130_fd_pr__nfet_01v8 12486 6480 12487 6481 l=30 w=84 "x1.x1.x1.VNB" "SEL1" 60 0 "a_12486_6426#" 84 2268,138 "a_12432_6288#" 84 4704,280
+device msubckt sky130_fd_pr__nfet_01v8 31104 7952 31105 7953 l=50 w=200 "x1.x1.x1.VNB" "x2.A8" 100 0 "x1.x1.x1.VNB" 200 11600,516 "V_drain" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 30484 7968 30485 7969 l=200 w=200 "x1.x1.x1.VNB" "BIAS" 400 0 "x2.A8" 200 11600,516 "x1.x1.x1.VNB" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 28486 7952 28487 7953 l=50 w=200 "x1.x1.x1.VNB" "x2.A7" 100 0 "x1.x1.x1.VNB" 200 11600,516 "V_drain" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 27866 7968 27867 7969 l=200 w=200 "x1.x1.x1.VNB" "BIAS" 400 0 "x2.A7" 200 11600,516 "x1.x1.x1.VNB" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 25738 7944 25739 7945 l=50 w=200 "x1.x1.x1.VNB" "x2.A6" 100 0 "x1.x1.x1.VNB" 200 11600,516 "V_drain" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 25118 7960 25119 7961 l=200 w=200 "x1.x1.x1.VNB" "BIAS" 400 0 "x2.A6" 200 11600,516 "x1.x1.x1.VNB" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 23158 7934 23159 7935 l=50 w=200 "x1.x1.x1.VNB" "x2.A5" 100 0 "x1.x1.x1.VNB" 200 11600,516 "V_drain" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 22538 7950 22539 7951 l=200 w=200 "x1.x1.x1.VNB" "BIAS" 400 0 "x2.A5" 200 11600,516 "x1.x1.x1.VNB" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 20534 7924 20535 7925 l=50 w=200 "x1.x1.x1.VNB" "x2.A4" 100 0 "x1.x1.x1.VNB" 200 11600,516 "V_drain" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 19914 7940 19915 7941 l=200 w=200 "x1.x1.x1.VNB" "BIAS" 400 0 "x2.A4" 200 11600,516 "x1.x1.x1.VNB" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 17964 7910 17965 7911 l=50 w=200 "x1.x1.x1.VNB" "x2.A3" 100 0 "x1.x1.x1.VNB" 200 11600,516 "V_drain" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 17344 7926 17345 7927 l=200 w=200 "x1.x1.x1.VNB" "BIAS" 400 0 "x2.A3" 200 11600,516 "x1.x1.x1.VNB" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 15362 7924 15363 7925 l=50 w=200 "x1.x1.x1.VNB" "x2.A2" 100 0 "x1.x1.x1.VNB" 200 11600,516 "V_drain" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 14742 7940 14743 7941 l=200 w=200 "x1.x1.x1.VNB" "BIAS" 400 0 "x2.A2" 200 11600,516 "x1.x1.x1.VNB" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 12792 7928 12793 7929 l=50 w=200 "x1.x1.x1.VNB" "x2.A1" 100 0 "x1.x1.x1.VNB" 200 11600,516 "V_drain" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 12172 7944 12173 7945 l=200 w=200 "x1.x1.x1.VNB" "BIAS" 400 0 "x2.A1" 200 11600,516 "x1.x1.x1.VNB" 200 11600,516

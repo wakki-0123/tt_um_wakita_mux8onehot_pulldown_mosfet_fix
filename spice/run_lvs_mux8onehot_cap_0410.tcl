@@ -1,5 +1,7 @@
 # 1. レイアウト側(Magic)の読み込み
-set layout [readnet spice mux8onehot_cap_0410_mag.spice]
+# set layout [readnet spice mux8onehot_cap_0410_mag.spice]
+
+set layout [readnet spice mux8onehot_cap_0410_flatten.spice]
 
 # 2. 回路図側(Xschem)の作成（空のネットリストを用意）
 set source [readnet spice /dev/null]
@@ -14,7 +16,7 @@ readnet spice mux8onehot_cap_0410_sch.spice $source
 
 # 5. LVSの実行
 puts "Running LVS..."
-lvs [list $layout mux8onehot_cap_0410] \
+lvs [list $layout mux8onehot_cap_0410_flatten] \
     [list $source mux8onehot_cap_0410] \
     /home/isshu/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl \
     mux8onehot_cap_0410_comp.out
